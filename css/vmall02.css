@@ -1,0 +1,259 @@
+.sort{
+	height: 155px;
+	font-size: 12px;
+
+}
+a{
+	text-decoration: none;	
+}
+.sort a{
+	color: #999;
+}
+.sort a:hover{
+	color: #000;
+}
+.bread{
+	height: 30px;
+	margin: 10px 0;
+}
+.bread>span{
+	position: relative;
+	top:16px;
+	right: 727px;
+}
+.phone{
+	border: 1px solid #dedede;
+}
+.phone_type{
+	height: 51px;
+	border-bottom: 1px solid #DEDEDE;
+}
+.p-title{
+	width: 86px;
+	text-align: right;
+}
+.p-default>a{
+	padding-left:16px ;
+	color: #c70000;
+}
+.p-value{
+	margin-left: 20px;
+}
+.p-value>ul>li{
+	margin-right:20px;
+}
+.main_prod{
+	width:1220px;
+	height: 1655px;
+	margin-top: 20px;
+}
+
+.main_prod a{
+	color:#666;
+}
+.main_prod a:hover{
+	color: #B40707;
+}
+.phone_type>*{
+	line-height: 51px;
+	float: left;
+}
+.p-value>ul>li{
+	float: left;
+}
+.phone_date{
+	height: 51px;
+}
+.phone_date>*{
+	line-height:51px;
+	float: left;
+}
+.sale_date,.price,.assess{
+	margin-left: 16px ;
+}
+.sale_date a{
+	color: #c70000;
+}
+
+.pro_list{
+	padding-bottom:20px;
+}
+.pro_list>li{
+	float: left;
+	width: 20%;
+	height: 384px;
+	font-size: 12px;
+}
+.p-item{
+	width: 224px;
+	height: 364px;
+	border: 1px solid #DEDEDE;
+	text-align: center;
+	position: relative;
+}
+.p-item:hover{
+	border: 1px solid #C70000;
+}
+.p-img{
+	padding: 38px 0 26px;
+	position: relative;
+}
+
+.p-img img{
+	width: 180px;
+	height: 180px;
+}
+.p-button{
+	width: 222px;
+	height:30px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border-top: 1px solid #DEDEDE;
+}
+.p-button>*{
+	width: 50%;
+	float: left;
+	line-height: 30px;
+}
+.p-button-cart{
+	border-right: 1px solid #dedede;
+}
+.p-name{
+	min-height: 38px;
+}
+.p-price{
+	font-size: 18px;
+	font-weight: 400;
+	color: #C70000;
+}
+.p-button-cart>span>a{
+	color:#C70000;
+}
+.p-button-cart:hover,.p-button-cart:hover a{
+	color:#fff;
+	background: #C70000;
+}
+.gift>a{
+	color: #C70000;
+}
+.hot .p-img::after{
+	content: "";
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/da_img/vmallList36/华为专区/热卖.png) no-repeat;
+	position: absolute;
+	bottom: 12px;
+	right:12px;
+}
+.n_item .p-img::after{
+	content: "";
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/da_img/vmallList36/华为专区/新品.png) no-repeat;
+	position: absolute;
+	bottom: 12px;
+	right:12px;	
+}
+.boom .p-img::after{
+	content: "";
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/da_img/vmallList36/华为专区/爆款.png) no-repeat;
+	position: absolute;
+	bottom: 12px;
+	right:12px;		
+}
+.list-pages>ul{
+	float: right;
+	margin-right: 20px;
+}
+.list-pages>ul>li{
+	line-height: 29px;
+	font-size: 12px;
+	text-align: center;
+	margin-left: 10px;
+	width: 29px;
+	height: 29px;
+	float: left;
+}
+.change_page{
+	background: url(../img/da_img/vmallList36/华为专区/图片精灵3.png) no-repeat;
+	border: 1px solid #999;
+}
+.change_page:hover{
+	border: 1px solid #666;
+}
+#fst_page{
+    background-position: 9px -77px;
+}
+#pre_page{
+    background-position: -20px -77px;	
+}
+#next_page{
+	cursor: pointer;
+    background-position: -73px -77px;		
+}
+#lst_page{
+	cursor: pointer;
+    background-position: -46px -77px;	
+}
+#next_page:hover{
+	background-color: #666;
+	background-position: -73px -54px;
+}
+#lst_page:hover{
+	background-color: #666;	
+	background-position: -46px -54px;
+}
+.footer{
+	background: #f9f9f9;
+}
+.footer>.banner{
+	height: 100%;
+}
+.slogan{
+	padding: 22px 0 20px;
+	border-bottom: 1px solid #ccc;
+}
+.slogan a{
+ 	color:#3a3a3a;
+}
+.slogan_item{
+	float: left;
+	height: 40px;
+	padding-right: 120px;
+	font-size: 18px;
+	line-height: 40px;
+}
+.slogan_item:last-of-type{
+	padding-right: 0px;
+}
+.slogan_logo{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background:url(../img/da_img/vmallList36/华为专区/图片精灵.svg);
+	background-position: -74px 0;
+}
+.s{
+	display:inline-block;
+	height: 10px;
+    width: 8px;
+    background: url(../img/da_img/vmallList36/华为专区/伪文字图标.png) no-repeat;
+    background-position: 0 -70px;
+    
+}
+.s_clicked{
+    background-position: 0 -110px;
+}
+.s_down{
+	background-position: 0 -29px;
+	position: relative;
+	top:2px;
+}

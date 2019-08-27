@@ -1,0 +1,633 @@
+a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #717171;
+}
+a:hover{
+	color: #C70000;
+}
+.topAdv{
+	position: relative;	
+}
+.adv_lis{
+	position: relative;
+	overflow: hidden;
+	height: 450px;
+
+}
+.top_adv_item{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left:-960px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.img_showed{
+	opacity: 1;
+}
+.top_adv_item img{
+	width: 1920px;
+	cursor: pointer;
+}
+
+
+.pointer_lis{
+	position: absolute;
+	left: 50%;
+	margin-left: -112px;
+	bottom:5% ;
+}
+
+.pointer{
+	float: left;
+	width: 16px;
+	height: 16px;
+	border: 4px solid transparent;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+.cyc{
+	width: 10px;
+	height: 10px;
+	border: 1px solid #666;
+	border-radius: 50%;
+	position: relative;
+	top: 50%;
+	margin-top: -5px;
+	left: 50%;
+	margin-left: -5px;
+	background: #fff;
+}
+.pointer_showed{
+	border: 4px solid #CCC;	
+}
+.pointer_showed .cyc{
+	background: #666;
+}
+.adv_img>img{
+	height:450px;
+	margin-left: -100px;
+}
+.scrollTop_nav{
+	height: 120px;
+	width: 100%;
+}
+.scrollTop_nav .banner{
+	position: relative;
+}
+.fixed_nav{
+	background: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+.p-type-lis>li{
+	float: left;
+	width: 16.66%;
+
+}
+.lis-type{
+	margin: 0px auto;
+	height: 120px;
+	background: url(../img/da_img/vmallHuawei/顶部栏目/顶部栏目.gif);
+}
+.current{
+	cursor: pointer;
+}
+.current:nth-of-type(2) .lis-type{
+	background-position:-200px 0;
+}
+.current:nth-of-type(3) .lis-type{
+	background-position:-400px 0 ;	
+}
+.current:nth-of-type(4) .lis-type{
+	background-position:-600px 0 ;	
+}
+.current:nth-of-type(5) .lis-type{
+	background-position:-800px 0 ;	
+}
+.current:nth-of-type(6) .lis-type{
+	background-position:-1000px 0 ;	
+}
+.choice{
+	min-width:1280px;
+	margin: 0 auto;
+	overflow: hidden;
+	height:620px;
+}
+.choice .banner{
+	position: relative;
+}
+.aside_adv li{
+	cursor: pointer;
+}
+.r_adv{
+	display: none;
+	position: absolute;
+	right:-115px;
+	top: 115px;
+	z-index: 2;
+}
+.fixed_r_adv{
+	position: absolute;
+	top: 0;
+	right: -100px;
+	z-index: 2;
+}
+.phoneBox{
+	height:1240px;
+}
+
+.lapBox{
+	height: 760px;
+}
+.watchBox{
+	height:1020px;
+}
+
+.furnitureBox{
+    height: 1020px;
+}
+
+.partsBox{
+	height: 1025px;
+}
+.mid-adv{
+	padding-top:10px;
+	cursor: pointer;
+}
+.mid-adv>img{
+	width: 1200px;
+}
+.title{
+	text-align: center;
+	position: relative;
+	padding: 60px 0 20px;
+}
+.channel_more{
+	cursor: pointer;
+	line-height: 24px;
+	bottom:15px;
+	right: 0px;
+    min-width: 42px;
+	font-size: 12px;
+    height: 27px;
+    border: 1px solid #b2b2b2;
+ 	padding: 0 10px 0 14px;
+	position: absolute;
+	color: #000;
+	text-align: right;
+}
+.channel_more:after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 6px solid #b2b2b2;
+    border-bottom: 4px solid transparent;
+}
+.channel_more:hover{
+	border-color:#C70000;
+	color: #C70000;
+}
+.channel_more:hover::after{
+    border-left: 6px solid #C70000;
+}
+.big_title{
+	
+	font-size: 30px;
+	font-weight: normal;
+}
+.big_title>span::before{
+	content: "";
+	display:block; 
+	height: 4px;
+	width:24px;
+	background: #B40707;
+	margin: 0px auto;
+}
+.row_bar li{
+	cursor: pointer;
+	float: left;
+	position: relative;
+}
+.item_tip{
+	min-width: 160px;
+	padding: 20px 0 0 30px;
+	position: absolute;		
+}
+.row_bar .item_tip{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 45px;
+}
+.roll_bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 4px;
+	width: 0%;
+	background: #B40707;
+	transition: all 0.2s;
+}
+.bar_lis li:hover .roll_bar{
+	width: 100%;
+}
+.item_title{
+	font-weight: normal;
+}
+.desc{
+	margin-top: 2px;
+	font-size: 13px;
+
+}
+.row_bar .desc{
+	color: #999;
+}
+.col_item{
+	width: 1222px;
+	margin-top: 10px;
+}
+.col_item li{
+	float: left;
+	width: 33.3%;
+	height: 190px;
+}
+.p-text{
+	cursor: pointer;
+	position: relative;
+	width: 386px;
+	height: 100%;
+	background: url(../img/da_img/vmallHuawei/华为精品/nova5ipro.png);
+}
+.p-text:hover .item_tip{
+	background: rgba(180,0,0,0.8);
+}
+.col_item li:nth-of-type(2) .p-text{
+	background: url(../img/da_img/vmallHuawei/华为精品/华为平板M6.png);
+}
+.col_item li:nth-of-type(3) .p-text{
+	background: url(../img/da_img/vmallHuawei/华为精品/华为手表.png);	
+}
+.col_item .item_tip{
+	background: rgba(0,0,0,0.4);
+	color: #fff;
+    padding: 20px 20px 0 20px;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 190px;
+}
+
+.col_item .price{
+	font-size: 13px;
+	padding-top: 20px;
+}
+.phoneBox .col-area .price{
+	color: #fff;
+}
+.choice .price::before{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 20px;
+	background: #fff;
+	margin-bottom: 5px;
+}
+.channel-nav{
+	text-align: center;
+}
+.channel-nav>a{
+	padding: 0 10px;
+}
+.col-area{
+	float: left;
+	cursor: pointer;
+}
+.col-area .item_tip{
+	color: #000;
+}
+.phoneBox .col-area .item_tip{
+	color: #fff;
+}
+.bar-tip .item_tip:before{
+	content: "";
+	height: 2px;
+	width: 20px;
+	background: #B40707;
+	display: block;
+	margin-bottom: 10px;
+}
+.bar-tip .price{
+	color: #B40707;
+	margin-top: 20px;
+}
+.row-area{
+	float: left;
+}
+.row-item{
+	padding-bottom: 12px;
+	float: left;
+}
+.up-row .row-item{
+    padding-left: 12px;
+}
+.down-row .row-item{
+	padding-bottom: 0;
+	padding-left:12px;
+}
+.row-item .item{
+	cursor: pointer;
+}
+.other_area{
+	padding-top: 15px;
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.other_area ul{
+	width: 2240px;
+	transition: all 0.5s;
+}
+.other_area .item{
+	position: relative;
+	float:left;
+	border: 1px solid #ccc;
+	width: 240px;
+	height: 266px;
+	padding-top: 30px;
+	cursor: pointer;
+	background: #fff;
+	transition: all 0.25s;
+}
+.scale_item{
+	top: -5px;
+	box-shadow: 0px 0px 2px 2px #999;
+}
+.other_area img{
+	height: 120px;
+}
+.other_area .item_tip{
+	position: static;
+	text-align: center;
+	padding: 0;
+}
+.other_area .item_title{
+    margin-top: 15px;
+	font-size: 14px;
+	color: #666;
+}
+.other_area .desc{
+	font-size: 12px;
+	color: #999;
+}
+.other_area .price{
+	margin-top: 10px;
+	font-size: 12px;
+	color: #C70000;
+}
+.other_area .item_img{
+	width: 120px;
+	height: 120px;
+	margin: 0px auto;
+}
+.other_area .item_tip:before{
+	display: none;
+}
+.btn-roll{
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	margin-top: -37px;
+	height:75px;
+	width: 22px;
+	background: #999999;
+	cursor: pointer;
+}
+.btn-roll:hover{
+	background: #666;
+}
+.btn-roll>span{
+	display: block;
+    height: 16px;
+    width: 11px;
+	margin-left: 4px;
+    margin-top: 28px;
+	background:url(../img/da_img/vmallHuawei/手机专区/图片精灵.png) no-repeat;
+	background-position: -101px -1px;	
+}
+.roll_l{
+	left: 0;
+}
+.roll_r{
+	right: 0;
+}
+.roll_r>span{
+	margin-left:6px;
+    background-position: -112px -1px;	
+}
+.roll_disable{
+	cursor: not-allowed;
+	background: #CCC;
+}
+.roll_disable:hover{
+	background: #ccc;
+}
+
+.adv_bottom{
+	float: left;
+	margin-top:15px;
+	text-align: center;
+	cursor: pointer;
+}
+.lapBox .col-area .item_title,.lapBox .col-area .desc{
+	color: #000;
+}
+
+.video_dis li{
+	cursor: pointer;
+	border: 1px solid #999;
+	float: left;
+}
+.video_upside>ul>li:nth-of-type(2){
+	margin: 0 12px;
+}
+.video_text{
+	padding: 0 20px 20px;
+}
+.video_img{
+	transform: scale(1.01);
+}
+.video_img::after{
+	display: block;
+	content: "";
+	width: 40px;
+	height: 40px;
+	background: url(../img/da_img/vmallHuawei/视频集锦/视频播放提示.png);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.video_title{
+	font-weight: lighter;
+	padding: 15px 0 5px;
+}
+.video_upside .video_info{
+	float: left;
+}
+.video_info,.video_more{
+	font-weight: 500;
+	color: #666;	
+}
+.video_upside .video_more{
+	float: right;
+}
+.video_downside{
+	margin-top: 10px;
+}
+
+.video_downside>ul>li{
+	margin: 0 10px 0 0;
+}
+
+.video_downside>ul>li:last-of-type{
+	margin: 0;
+}
+.cover{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 2;
+}
+.video_player{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left:-400px;
+	margin-top: -225px;
+	
+}
+.window_off{
+	width: 15px;
+	height: 15px;
+	background: url(../img/da_img/vmallHuawei/视频集锦/视频关闭.png) no-repeat;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.warehouse{
+	overflow: hidden;
+}
+.ticket_item{
+	float: left;
+	text-align: center;
+
+}
+.ticket_item{
+	height: 164px;
+	overflow: hidden;
+}
+.ticket_area{
+	position: relative;
+	top: 0;
+	transition: all 0.25s;
+	width: 393px;
+	height: 164px;
+	background: url(../img/da_img/vmallHuawei/优惠券.png);	
+
+}
+.ticket_item .price{
+    height: 80px;
+    line-height: 78px;
+    color: #C70000;
+    font-weight: 700;
+}
+.ticket_item:nth-of-type(2){
+	margin: 0 10px;
+}
+.price .price_num{
+	font-size: 55px;
+}
+.receive{
+	width: 270px;
+	height: 40px;
+    font-size: 20px;
+    line-height:40px;
+    font-weight: 700;
+    margin: 5px auto;
+}
+.ticket_item:hover .ticket_area{
+	top: -5px;
+
+}
+.ticket_item:hover .receive{
+	background: #C70000;
+	color: #fff;
+	cursor: pointer;
+}
+.pic-wrap{
+	width: 1920px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+	cursor: pointer;
+	height: 460px;
+}
+.ticket_window{
+	width: 460px;
+	height: 230px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -230px;
+	margin-top:-115px;
+}
+.ticket_content{
+	padding: 30px 0 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.face{
+	margin: 0 auto 30px;
+}
+.cancel_btn{
+	text-align: center;
+}
+.cancel_btn a{
+	color: #000;
+	text-align: center;
+    display: inline-block;
+    min-width: 170px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+    white-space: nowrap;
+    border-radius: 2px;
+}
+a.btn_ok{
+	background: #C70000;
+	color: #fff;
+}
+a.btn_cancel:hover{
+	border-color:#666;
+}
+a.btn_ok:hover{
+	background: #B40707;
+}

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册_华为帐号</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+    <script>
+        $(function(){
+            var a=0;
+            var b=0;
+            $(' .icon').click(function(){
+                a++;
+                
+                if(a%2==0){
+                    $('.order_container').css({
+                        display: "none"
+                    })
+                    
+                
+                }else{
+                    $('.order_container').css({
+                        display: "block"
+                    }) 
+                    $('.order_container_one').css({
+                        display: "none"
+                    })
+                    b=0;
+                }
+            
+            })
+            $('.order_container .list li').click(function(){
+                    var value=$(this).html();
+                    $('.right-input .text').html(value);
+                    $('.order_container').css({display:"none"});
+                    a--;
+                })
+            $('.icon-one').click(function(){
+                b++;
+                
+                if(b%2==0){
+                    $('.order_container_one').css({
+                        display: "none"
+                    })
+                
+                }else{
+                    $('.order_container_one').css({
+                        display: "block"    
+                    })
+                    $('.order_container').css({
+                        display: "none"
+                    })
+                    a=0;
+                    
+                }
+            
+            })
+            $('.order_container_one .list li').click(function(){
+                    var value=$(this).html();
+                    $('.left-input .val-text').html(value);
+                    $('.order_container_one').css({display:"none"})
+                    b--;
+                })
+            $('.icon-year').click(function(){
+                $('.year .order-year').css({
+                    display: "block" 
+                })
+                $('.month .order-month').css({
+                    display: "none" 
+                })
+                $('.day .order-day').css({
+                    display: "none" 
+                })
+            })
+            $('.icon-month').click(function(){
+                $('.month .order-month').css({
+                    display: "block" 
+                })
+                $('.year .order-year').css({
+                    display: "none" 
+                })
+                $('.day .order-day').css({
+                    display: "none" 
+                })
+
+            })
+            $('.icon-day').click(function(){
+                $('.day .order-day').css({display: "block" })
+                $('.year .order-year').css({display: "none"})
+                $('.month .order-month').css({display: "none" })
+            })
+            $('.right-input-parent .years').click(function(){
+                    var value=$(this).html();
+                    $(' .year span').html(value+'年');
+                    $('.year .order-year').css({display: "none"})
+            })
+            $('.right-input-parent .months').click(function(){
+                    var value=$(this).html();
+                    $(' .month span').html(value+'月');
+                    $('.month .order-month').css({display: "none" })
+            })
+            $('.right-input-parent .days').click(function(){
+                        var value=$(this).html();
+                        $(' .day span').html(value+'日');
+                        $('.day .order-day').css({display: "none" })
+                })
+            $('.register_middle .left a').click(function(){
+                $(this).addClass('active-bg');
+                $(this).siblings().removeClass('active-bg');
+            })
+            $('.phone').click(function(){
+                $('.register_middle .plone-div:first').css({
+                    display:"block"
+                })
+                $('.register_middle .plone-div:last').css({
+                    display:"none"
+                })
+            })
+            $('.email').click(function(){
+                $('.register_middle .plone-div:last').css({
+                    display:"block"
+                })
+                $('.register_middle .plone-div:first').css({
+                    display:"none"
+                })
+            })
+            $('.tel').blur(function (e) {
+                e.preventDefault();
+                    var reg=/^[1-9][0-9]{10}$/g;
+                if(reg.test($(this).val())){
+                    $(this).css({
+                      'border-color':"#ccc",
+                      'border-left-color':'transparent'
+                  })
+                  $('.left-input-color').css({
+                    'border-color':"#ccc",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.tel-validation').html('');
+                }else{
+                  $(this).css({
+                      'border-color':"#c70000",
+                      'border-left-color':'transparent'
+                  })
+                  $('.left-input-color').css({
+                    'border-color':"#c70000",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.tel-validation').html('手机号码不正确');
+                  $(this).val('');
+                }
+            })
+            $('.validation-show').focus(function (e) { 
+                e.preventDefault();
+                $('.mm-validation').css({
+                    display:"block"
+                })
+            });
+            $('.validation-show').blur(function (e) { 
+                e.preventDefault();
+                $('.mm-validation').css({
+                    display:"none"
+                })
+                var reg=/^[\\p{Punct}a-zA-Z0-9]{8,16}$/g;
+                if(reg.test($(this).val())){
+                    $(this).css({
+                      'border-color':"#ccc",
+                      'border-left-color':'transparent'
+                  })
+                  $('.left-input-validation').css({
+                    'border-color':"#ccc",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.mms-validation').html('');
+                }else{
+                  $(this).css({
+                      'border-color':"#c70000",
+                      'border-left-color':'transparent'
+                  })
+                  $('.left-input-validation').css({
+                    'border-color':"#c70000",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.mms-validation').html('密码码格式不正确');
+                }
+            });
+        
+            $('.mm-validations').blur(function(){
+                if($(this).val()==$('.validation-show').val()){
+                    $(this).css({
+                      'border-color':"#ccc",
+                      'border-left-color':'transparent'
+                  })
+                  $('.show-parent').css({
+                    'border-color':"#ccc",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.show-mm').html('');
+                }else{
+                  $(this).css({
+                      'border-color':"#c70000",
+                      'border-left-color':'transparent'
+                  })
+                  $('.show-parent').css({
+                    'border-color':"#c70000",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.show-mm').html('密码与确认密码不一致');
+                }
+            })
+            $('.email-broder-right').blur(function(){
+                var reg=/^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/g;
+                if(reg.test($(this).val())){
+                    $(this).css({
+                      'border-color':"#ccc",
+                      'border-left-color':'transparent'
+                  })
+                  $('.email-broder-left').css({
+                    'border-color':"#ccc",
+                    'border-right-color':'#ccc'
+                  })
+                $('.email-validations').html('');
+                }else{
+                  $(this).css({
+                      'border-color':"#c70000",
+                      'border-left-color':'transparent'
+                  })
+                  $('.email-broder-left').css({
+                    'border-color':"#c70000",
+                    'border-right-color':'#ccc'
+                  })
+                  $('.email-validations').html('邮箱输入不符合标准');
+                }
+            })
+        })
+        
+    
+    </script>
+    <body>
+        <div class="head_bg">
+            <div class="head_center">
+                <div class="register_logo">
+                    <img src="../img/fei_img/head-top.png" alt="">
+                </div>
+                <div class="register_middle">
+                    <div class="left">
+                        <a href="#" class="phone active-bg"><i></i> <span>手机号</span> </a>
+                        <a href="#" class="email"><i></i> <span>电子邮箱</span> </a>
+                    </div>
+                    <div class="right">
+                        <a href="login.html">已有华为账号 <span>登陆></span></a>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="plone-div" style="display: block">
+                        <div class="input-container">
+                            <div class="left-input-parent ">
+                            <div class="left-input">国家/地区</div>
+                            </div>
+                            <div class="right-input-parent ">
+                                    <div class="right-input " style="cursor: pointer;"> <a href="#" style="color: #3a3a3a" class="text">中国</a> <span class="icon"></span></div>
+                                    <div class="order_container">
+                                            <div class="order_content">
+                                                <input type="search" name="" id="" class="search" placeholder="搜索">
+                                                <div class="flow-label"> 
+                                                    <span>常用国家/地名</span>
+                                                    <span class="orderItem">A</span>
+                                                    <span class="orderItem">B</span>
+                                                    <span class="orderItem">C</span>
+                                                    <span class="orderItem">D</span>
+                                                    <span class="orderItem">E</span>
+                                                    <span class="orderItem">F</span>
+                                                    <span class="orderItem">G</span>
+                                                    <span class="orderItem">H</span>
+                                                    <span class="orderItem">J</span>
+                                                    <span class="orderItem">K</span>
+                                                    <span class="orderItem">L</span>
+                                                    <span class="orderItem">M</span>
+                                                    <span class="orderItem">N</span>
+                                                    <span class="orderItem">P</span>
+                                                    <span class="orderItem">R</span>
+                                                    <span class="orderItem">S</span>
+                                                    <span class="orderItem">T</span>
+                                                    <span class="orderItem">W</span>
+                                                    <span class="orderItem">X</span>
+                                                    <span class="orderItem">Y</span>
+                                                    <span class="orderItem">Z</span>
+
+                                                </div>
+                                            </div>
+                                            <ul class="list">
+                                                <div class="info-list">A</div>
+                                                <li>阿尔巴尼亚</li>
+                                                <li>阿尔及利亚</li>
+                                                <li>阿富汗</li>
+                                                <li>阿根廷</li>
+                                                <li>爱尔兰</li>
+                                            </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="input-container nths_2">
+                                <div class="left-input-parent ">
+                                        <div class="left-input  left-input-color" style="cursor: pointer;" ><a href="#" class="val-text"style="color: #3a3a3a">+853(中国澳门特别行政区)</a><span class="icon-one"></span></div>
+                                            <div class="order_container_one">
+                                                    <div class="order_content">
+                                                        <input type="search" name="" id="" class="search" placeholder="搜索">
+                                                    </div>
+                                                    <ul class="list">
+                                                        <li >+86(中国)</li>
+                                                        <li >+853(中国澳门特别行政区)</li>
+                                                        <li >+886(中国台湾)</li>
+                                                        <li >+852(中国香港特别行政区)</li>
+                                                        <li>+236(中非共和国)</li>
+                                                    </ul>
+                                            </div>
+                                </div>
+
+                            
+                                <div class="right-input-parent ">
+                                        <input type="tel" name="" id="" placeholder="请输入手机号" class="right-input tel" >
+                                </div>
+                                <span class="tel-validation"></span>
+                            </div>
+                        <div class="input-container">
+                                <div class="left-input-parent ">
+                                        <div class="left-input " style="cursor: pointer;" >短信验证码</div>
+                                </div>
+
+                                
+                                <div class="right-input-parent ">
+                                        <input type="tel" name="" id="" placeholder="请输入短信验证码" class="right-input ">
+                                        <input type="button" value="获取验证码" class="right-btn">
+                                </div>
+                            </div> 
+                        <div class="input-container input-validation">
+                                <div class="left-input-parent ">
+                                        <div class="left-input left-input-validation" style="cursor: pointer;" >密&nbsp;&nbsp;&nbsp;&nbsp; 码</div>
+                                </div>
+                                <div class="right-input-parent ">
+                                        <input type="password" name="" id="" placeholder="请输入密码" class="right-input validation-show">
+                                </div>
+                                <span class="mms-validation"></span>
+                                <div class="mm-validation">
+                                  
+                                            <p class="one">密码需要满足以下要求：</p>
+                                            <p class="yq">不能包含空格</p>
+                                            <p class="yq">至少包含8个字符</p>
+                                            <p>至少包含数字，字母，符号中的2种</p>
+                                   
+                                </div>
+                               
+                            </div> 
+                            
+                        <div class="input-container">
+                                <div class="left-input-parent  ">
+                                        <div class="left-input  show-parent" style="cursor: pointer;" >确认密码</div>
+                                </div>
+
+                                
+                                <div class="right-input-parent ">
+                                        <input type="password" name="" id="" placeholder="请再次输入密码" class="right-input mm-validations">
+                                </div>
+                                <span class="show-mm"></span>
+                            </div> 
+                        <div class="input-container nths_6">
+                                <div class="left-input-parent ">
+                                        <div class="left-input " style="cursor: pointer;" >出生日期</div>
+                                </div>
+
+                                
+                                <div class="right-input-parent ">
+                                        <div class="right-input " style="cursor: pointer;"> <a href="#" class="year"> <span>1999年</span> 
+                                        <div class="order-year">
+                                            <ul>
+                                                <li class="years">2019</li>
+                                                <li class="years">2018</li>
+                                                <li class="years">2017</li>
+                                                <li class="years">2016</li>
+                                                <li class="years">2015</li>
+                                                <li class="years">2014</li>
+                                                <li class="years">2013</li>
+                                            </ul>
+                                        </div>
+                                        </a><span class="icon-year "></span>  <a href="#" class="month"> <span>1月</span>
+                                                <div class="order-month">
+                                                        <ul>
+                                                            <li class="months">1</li>
+                                                            <li class="months">2</li>
+                                                            <li class="months">3</li>
+                                                            <li class="months">4</li>
+                                                            <li class="months">5</li>
+                                                            <li class="months">6</li>
+                                                            <li class="months">7</li>
+                                                            <li class="months">8</li>
+                                                            <li class="months">9</li>
+                                                            <li class="months">10</li>
+                                                            <li class="months">11</li>
+                                                            <li class="months">12</li>
+                                                        </ul>
+                                                    </div>
+                                        </a><span class="icon-month"></span> <a href="#" class="day"> <span> 1日</span>
+                                                <div class="order-day">
+                                                        <ul>
+                                                            <li class="days">1</li>
+                                                            <li class="days">2</li>
+                                                            <li class="days">3</li>
+                                                            <li class="days">4</li>
+                                                            <li class="days">5</li>
+                                                            <li class="days">6</li>
+                                                            <li class="days">7</li>
+                                                            <li class="days">8</li>
+                                                            <li class="days">9</li>
+                                                            <li class="days">10</li>
+                                                            <li class="days">11</li>
+                                                            <li class="days">12</li>
+                                                            <li class="days">13</li>
+                                                            <li class="days">14</li>
+                                                        </ul>
+                                                    </div>
+                                        </a><span class="icon-day"></span></div>
+                                    
+                                </div>
+                            </div>
+                        <div class="red-btn">
+                                <input type="button" value="注册">
+                        </div>                                
+                    </div>
+                    <div class="plone-div">
+                            <div class="input-container">
+                                <div class="left-input-parent ">
+                                <div class="left-input  ">国家/地区</div>
+                                </div>
+                                <div class="right-input-parent ">
+                                        <div class="right-input " style="cursor: pointer;"> <a href="#" style="color: #3a3a3a" class="text">中国</a> <span class="icon"></span></div>
+                                        <div class="order_container">
+                                                <div class="order_content">
+                                                    <input type="search" name="" id="" class="search" placeholder="搜索">
+                                                    <div class="flow-label"> 
+                                                        <span>常用国家/地名</span>
+                                                        <span class="orderItem">A</span>
+                                                        <span class="orderItem">B</span>
+                                                        <span class="orderItem">C</span>
+                                                        <span class="orderItem">D</span>
+                                                        <span class="orderItem">E</span>
+                                                        <span class="orderItem">F</span>
+                                                        <span class="orderItem">G</span>
+                                                        <span class="orderItem">H</span>
+                                                        <span class="orderItem">J</span>
+                                                        <span class="orderItem">K</span>
+                                                        <span class="orderItem">L</span>
+                                                        <span class="orderItem">M</span>
+                                                        <span class="orderItem">N</span>
+                                                        <span class="orderItem">P</span>
+                                                        <span class="orderItem">R</span>
+                                                        <span class="orderItem">S</span>
+                                                        <span class="orderItem">T</span>
+                                                        <span class="orderItem">W</span>
+                                                        <span class="orderItem">X</span>
+                                                        <span class="orderItem">Y</span>
+                                                        <span class="orderItem">Z</span>
+        
+                                                    </div>
+                                                </div>
+                                                <ul class="list">
+                                                    <div class="info-list">A</div>
+                                                    <li>阿尔巴尼亚</li>
+                                                    <li>阿尔及利亚</li>
+                                                    <li>阿富汗</li>
+                                                    <li>阿根廷</li>
+                                                    <li>爱尔兰</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="input-container nth_2">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input email-broder-left" style="cursor: pointer;" >邮件地址</div>
+                                    </div>
+        
+                                    
+                                    <div class="right-input-parent ">
+                                            <input type="email" name="" id="" placeholder="请输入邮箱地址" class="right-input email-broder-right">
+                                    </div>
+                                    <span class="email-validations"></span>
+                                </div> 
+                            <div class="input-container">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input " style="cursor: pointer;" >邮箱验证码</div>
+                                    </div>
+        
+                                    
+                                    <div class="right-input-parent ">
+                                            <input type="email" name="" id="" placeholder="请输入邮箱验证码" class="right-input ">
+                                            <input type="button" value="获取验证码" class="right-btn">
+                                    </div>
+                                   
+                                </div> 
+                            <div class="input-container">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input " style="cursor: pointer;" >密&nbsp;&nbsp;&nbsp;&nbsp; 码</div>
+                                    </div>
+        
+                                    
+                                    <div class="right-input-parent ">
+                                            <input type="password" name="" id="" placeholder="请输入密码" class="right-input ">
+                                    </div>
+                                </div> 
+                            <div class="input-container">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input " style="cursor: pointer;" >确认密码</div>
+                                    </div>
+        
+                                    
+                                    <div class="right-input-parent ">
+                                            <input type="password" name="" id="" placeholder="请再次输入密码" class="right-input ">
+                                    </div>
+                                </div> 
+                            <div class="input-container nth_6">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input " style="cursor: pointer;" ><a href="#" class="val-text"style="color: #3a3a3a">+853(中国澳门特别行政区)</a><span class="icon-one"></span></div>
+                                                <div class="order_container_one">
+                                                        <div class="order_content">
+                                                            <input type="search" name="" id="" class="search" placeholder="搜索">
+                                                        </div>
+                                                        <ul class="list">
+                                                            <li >+86(中国)</li>
+                                                            <li >+853(中国澳门特别行政区)</li>
+                                                            <li >+886(中国台湾)</li>
+                                                            <li >+852(中国香港特别行政区)</li>
+                                                            <li>+236(中非共和国)</li>
+                                                        </ul>
+                                                </div>
+                                    </div>
+        
+                                
+                                    <div class="right-input-parent ">
+                                            <input type="tel" name="" id="" placeholder="请输入手机号" class="right-input ">
+                                    </div>
+                                </div>
+                            <div class="input-container  nth_7">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input " style="cursor: pointer;" >短信验证码</div>
+                                    </div>
+        
+                                    
+                                    <div class="right-input-parent ">
+                                            <input type="tel" name="" id="" placeholder="请输入短信验证码" class="right-input ">
+                                            <input type="button" value="获取验证码" class="right-btn">
+                                    </div>
+                                </div> 
+                            <div class="input-container  nth_8">
+                                    <div class="left-input-parent ">
+                                            <div class="left-input " style="cursor: pointer;" >出生日期</div>
+                                    </div>
+        
+                                    
+                                    <div class="right-input-parent ">
+                                            <div class="right-input " style="cursor: pointer;"> <a href="#" class="year"> <span>1999年</span> 
+                                            <div class="order-year">
+                                                <ul>
+                                                    <li class="years">2019</li>
+                                                    <li class="years">2018</li>
+                                                    <li class="years">2017</li>
+                                                    <li class="years">2016</li>
+                                                    <li class="years">2015</li>
+                                                    <li class="years">2014</li>
+                                                    <li class="years">2013</li>
+                                                </ul>
+                                            </div>
+                                            </a><span class="icon-year "></span>  <a href="#" class="month"> <span>1月</span>
+                                                    <div class="order-month">
+                                                            <ul>
+                                                                <li class="months">1</li>
+                                                                <li class="months">2</li>
+                                                                <li class="months">3</li>
+                                                                <li class="months">4</li>
+                                                                <li class="months">5</li>
+                                                                <li class="months">6</li>
+                                                                <li class="months">7</li>
+                                                                <li class="months">8</li>
+                                                                <li class="months">9</li>
+                                                                <li class="months">10</li>
+                                                                <li class="months">11</li>
+                                                                <li class="months">12</li>
+                                                            </ul>
+                                                        </div>
+                                            </a><span class="icon-month"></span> <a href="#" class="day"> <span> 1日</span>
+                                                    <div class="order-day">
+                                                            <ul>
+                                                                <li class="days">1</li>
+                                                                <li class="days">2</li>
+                                                                <li class="days">3</li>
+                                                                <li class="days">4</li>
+                                                                <li class="days">5</li>
+                                                                <li class="days">6</li>
+                                                                <li class="days">7</li>
+                                                                <li class="days">8</li>
+                                                                <li class="days">9</li>
+                                                                <li class="days">10</li>
+                                                                <li class="days">11</li>
+                                                                <li class="days">12</li>
+                                                                <li class="days">13</li>
+                                                                <li class="days">14</li>
+                                                            </ul>
+                                                        </div>
+                                            </a><span class="icon-day"></span></div>
+                                        
+                                    </div>
+                                </div>
+                            <div class="red-btn">
+                                    <input type="button" value="注册">
+                            </div>                                
+                        </div>
+                    <hr style="border: 0; background-color: #ccc; height: 1px;" />
+                </div>
+                <div class="footer">
+                        <p><a href="#">华为帐号与云空间用户协议</a> <em>|</em> <a href="#">关于华为帐号与云空间隐私的声明</a><em>|</em><span>常见问题</span><em>|</em><span>Cookies</span></p>
+                        <p>Copyright © 2011-2019  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9</p>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+</html>

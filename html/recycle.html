@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>以旧换新</title>
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/page_header.css">
+	<link rel="stylesheet" href="../css/page_bottom.css">
+	<link rel="stylesheet" href="../css/recycle.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/page_header.js"></script>
+</head>
+<body>
+	<!-- 导航 -->
+	<div class="shortcut">
+		<div class="layout clearfix">
+			<div class="s-sub">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+                	<li><a href="">华为官网</a></li>
+                	<li><a href="">荣耀官网</a></li>
+                	<li><a href="">花粉俱乐部</a></li>          
+                	<li><a href="#">企业购</a></li>       
+                	<li><a href="#">Select Region</a></li>
+                	<!-- .drop-down下拉菜单 隐藏-->
+                	<li class="drop-down">                          		
+                		<a href="#" class="icon-dropdown">更多精彩</a>               		
+                		<div class="drop-down-more">
+                			<dl>
+                				<dt><a href="#">EMUI</a></dt>
+                				<dt><a href="#">应用市场</a></dt>
+                				<dt><a href="#">华为终端云空间</a></dt>
+                				<dt><a href="#">开发者联盟</a></dt>
+                			</dl>
+                		</div>
+                	</li>                	           
+				</ul>
+			</div>
+			<div class="s-main">
+				<ul>
+					<li>
+						<a href="login.html">请登录</a>
+						<a href="register.html">注册</a>
+					</li>
+					<li><a href="order.html">我的订单</a></li>
+					<li class="drop-down">
+						<a href="" class="icon-dropdown">客户服务</a>
+						<div class="drop-down-more ddm2">
+                			<dl>
+                				<dt><a href="help_index.html">服务中心</a></dt>
+                				<dt><a href="#">联系客服</a></dt>               	
+                			</dl>
+                		</div>
+					</li>
+					<li class="drop-down">
+						<a href="" class="icon-dropdown">网站导航</a>
+						<div class="drop-down-more drop-nav clearfix">
+							<div class="ddm-nav-icons">
+								<a href="../index.html">
+									<p>
+										<img src="../img/headImg/index-icon.png" alt="">
+									</p>
+									<span>商城首页</span>
+								</a>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>频道</dt>
+									<dd>华为专区</dd>
+									<dd>企业购</dd>
+									<dd>荣耀专区</dd>		
+								</dl>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>产品</dt>
+									<dd>手机</dd>
+									<dd>智能家居</dd>
+									<dd>平板&笔记本</dd>
+									<dd>通用配件</dd>
+									<dd>专属配件</dd>
+									<dd>智能穿戴</dd>			
+								</dl>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>增值服务</dt>
+									<dd>以旧换新</dd>
+									<dd>补购保障</dd>
+									<dd>一口价换电池</dd>		
+								</dl>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>会员	</dt>
+									<dd>会员频道</dd>
+									<dd>企业购</dd>
+									<dd>荣耀专区</dd>		
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="icon-dropdown">手机版</a>
+						<div class="drop-down-more ddm-mobile clearfix">
+							<div class="ddm-code-detail">		
+								<div class="qr-code">
+									<img src="../img/headImg/vmall-qrcode3.png" alt="">
+								</div>
+								<div class="code-info">
+									<h2>华为商城APP</h2>
+									<p>新人专享好礼最高5000积分</p>
+									<span><img src="../img/headImg/android-logo.png" alt=""></span>
+									<span><img src="../img/headImg/wechat-logo.png" alt=""></span>
+								</div>
+							</div>		
+							<div class="ddm-code-detail">		
+								<div class="qr-code">
+									<img src="../img/headImg/vmall-qrcode2.jpg" alt="">
+								</div>
+								<div class="code-info">
+									<h2>商城公众号</h2>
+									<p>微信扫一扫</p>
+									<span><img src="../img/headImg/wechat-logo.png" alt=""></span>								
+								</div>
+							</div>
+							<div class="ddm-code-detail">		
+								<div class="qr-code">
+									<img src="../img/headImg/vmall-qrcode.jpg" alt="">
+								</div>
+								<div class="code-info">
+									<h2>微信小程序</h2>
+									<span><img src="../img/headImg/wechat-logo.png" alt=""></span>
+								</div>							
+							</div>							
+					</div>
+					</li>
+					<li class="drop-down">
+						<a href="shopcart.html">购物车(0)</a>
+						<div class="drop-down-more ddm-cart">
+                			<p></p>
+                			<p>您的购物车是空的，赶紧选购吧^_^</p>
+                		</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="layout clearfix">
+			<div class="left">
+				<!-- 头部图标 -->
+				<div class="logo">
+					<a href="#">
+						<img src="../img/headImg/huawei-shop-logo.png" alt="logo_pic">
+					</a>
+				</div>
+				<!-- 头部图标旁边的导航 -->
+				<div class="naver">
+					<ul>
+						<li>
+							<a href="#">手机</a>
+						</li>
+						<li>
+							<a href="#">笔记本&amp;平板</a>
+						</li>
+						<li>
+							<a href="#">智能穿戴</a>
+						</li>
+						<li>
+							<a href="#">智能家居&amp;智慧屏</a>
+						</li>
+						<li>
+							<a href="#">热销配件</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 鼠标移入后下面的菜单 -->
+				<div class="nav-sub">
+					<!-- 头部有几种分类 这东西就有几个 移入相对应的分类才显示 第一个是手机-->
+					<div class="nav-sub-wrap">
+						<!-- 首行分类 -->
+						<div class="title">
+							<span class="all-cat">
+								<a href="#">全部手机</a>
+							</span>
+							<ul>
+								<li>
+									<a href="#">荣耀</a>
+								</li>
+								<li>
+									<a href="#">HUAWEI P系列</a>
+								</li>
+								<li>
+									<a href="#">HUAWEI Mate</a>
+								</li>
+								<li>
+									<a href="#">荣耀畅玩</a>
+								</li>
+								<li>
+									<a href="#">HUAWEI nova</a>
+								</li>
+								<li>
+									<a href="#">华为畅享</a>
+								</li>
+								<li>
+									<a href="#">HUAWEI 麦芒</a>
+								</li>
+							</ul>
+						</div>
+						<div class="g-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/hot-good3.png" alt="">
+										<span class="g-name">HUAWEI P30</span>
+										<span class="g-price">￥4988</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/hot-goods-honor20.png" alt="">
+										<span class="g-name">荣耀20</span>
+										<span class="g-price">￥2699</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/mobile-p30.png" alt="">
+										<span class="g-name">HUAWEI P30</span>
+										<span class="g-price">￥3688</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/hot-goods8.png" alt="">
+										<span class="g-name">荣耀20i</span>
+										<span class="g-price">￥1299</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/mobile-honor8x.png" alt="">
+										<span class="g-name">荣耀8X</span>
+										<span class="g-price">￥999</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/hot-goods4.png" alt="">
+										<span class="g-name">HUAWEI nova5 pro</span>
+										<span class="g-price">￥2999</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 笔记本&平板 -->
+					<div class="nav-sub-wrap">
+						<!-- 首行分类 -->
+						<div class="title">
+							<span class="all-cat">
+								<a href="#">全部产品</a>
+							</span>
+							<ul>
+								<li>
+									<a href="#">笔记本电脑</a>
+								</li>
+								<li>
+									<a href="#">平板</a>
+								</li>
+								<li>
+									<a href="#">笔记本配件</a>
+								</li>
+							</ul>
+						</div>
+						<div class="g-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/huawei-mac.png" alt="">
+										<span class="g-name">荣耀 MagicBook Pro</span>
+										<span class="g-price">¥5499</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/m6.png" alt="">
+										<span class="g-name">华为平板 M6 10英寸</span>
+										<span class="g-price">￥2699</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/magicbook.png" alt="">
+										<span class="g-name">MagicBook</span>
+										<span class="g-price">￥5688</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/mac-pro.png" alt="">
+										<span class="g-name">HUAWEI MateBook X Pro（2019）</span>
+										<span class="g-price">￥8299</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/tablet5.png" alt="">
+										<span class="g-name">荣耀平板5 10.1英寸</span>
+										<span class="g-price">¥1199</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/m4.png" alt="">
+										<span class="g-name">HUAWEI MateBook 14</span>
+										<span class="g-price">￥5999</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 智能穿戴 -->
+					<div class="nav-sub-wrap">
+						<!-- 首行分类 -->
+						<div class="title">
+							<span class="all-cat">
+								<a href="#">全部产品</a>
+							</span>
+							<ul>
+								<li>
+									<a href="#">手环</a>
+								</li>
+								<li>
+									<a href="#">手表</a>
+								</li>
+								<li>
+									<a href="#">VR</a>
+								</li>
+							</ul>
+						</div>
+						<div class="g-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/watch-gt.png" alt="">
+										<span class="g-name">HUAWEI WATCH GT</span>
+										<span class="g-price">¥1488</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/honor-watch.png" alt="">
+										<span class="g-name">荣耀手表</span>
+										<span class="g-price">¥699</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/ring-pro.png" alt="">
+										<span class="g-name">华为手环 3 Pro</span>
+										<span class="g-price">¥379</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/honor-wing4.png" alt="">
+										<span class="g-name">荣耀手环4 标准版</span>
+										<span class="g-price">¥169</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/children-watch.png" alt="">
+										<span class="g-name">华为儿童手表 3</span>
+										<span class="g-price">¥368</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/huawei-vr.png" alt="">
+										<span class="g-name">HUAWEI VR 2</span>
+										<span class="g-price">¥1999</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 智能家居 -->
+					<div class="nav-sub-wrap">
+						<!-- 首行分类 -->
+						<div class="title">
+							<span class="all-cat">
+								<a href="#">全部产品</a>
+							</span>
+							<ul>
+								<li>
+									<a href="#">智慧屏</a>
+								</li>
+								<li>
+									<a href="#">路由器</a>
+								</li>
+								<li>
+									<a href="#">照明</a>
+								</li>
+								<li>
+									<a href="#">电视盒</a>
+								</li>
+								<li>
+									<a href="#">清洁</a>
+								</li>
+								<li>
+									<a href="#">安防</a>
+								</li>
+								<li>
+									<a href="#">健康</a>
+								</li>
+							</ul>
+						</div>
+						<div class="g-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/Q2-pro.png" alt="">
+										<span class="g-name">华为路由 Q2 Pro</span>
+										<span class="g-price">¥769</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/pro2.png" alt="">
+										<span class="g-name">荣耀路由Pro 2</span>
+										<span class="g-price">¥295</span>
+									</a>
+</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/AImusic-box.png" alt="">
+										<span class="g-name">华为 AI 音箱</span>
+										<span class="g-price">￥368</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/luyou-2s.png" alt="">
+										<span class="g-name">荣耀路由2S</span>
+										<span class="g-price">¥169</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/yoyo-box.png" alt="">
+										<span class="g-name">荣耀YOYO智能音箱</span>
+										<span class="g-price">￥199</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/huawei-wifi.png" alt="">
+										<span class="g-name">华为随行WiFi 2</span>
+										<span class="g-price">￥299</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 热销配件 -->
+					<div class="nav-sub-wrap">
+						<!-- 首行分类 -->
+						<div class="title">
+							<span class="all-cat">
+								<a href="#">全部配件</a>
+							</span>
+							<ul>
+								<li>
+									<a href="#">保护壳</a>
+								</li>
+								<li>
+									<a href="#">移动电源</a>
+								</li>
+								<li>
+									<a href="#">耳机</a>
+								</li>
+								<li>
+									<a href="#">保护套</a>
+								</li>
+								<li>
+									<a href="#">贴膜</a>
+								</li>
+								<li>
+									<a href="#">音箱</a>
+								</li>
+								<li>
+									<a href="#">自拍杆/支架</a>
+								</li>
+							</ul>
+						</div>
+						<div class="g-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/40w-superpower.png" alt="">
+										<span class="g-name">华为40W超级快充移动电源</span>
+										<span class="g-price">¥369</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/Flypods.png" alt="">
+										<span class="g-name">荣耀FlyPods无线耳机</span>
+										<span class="g-price">￥699</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/fat.png" alt="">
+										<span class="g-name">华为智能体脂秤</span>
+										<span class="g-price">¥169</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/xSports.png" alt="">
+										<span class="g-name">荣耀xSport运动蓝牙耳机</span>
+										<span class="g-price">￥129</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/freelace.png" alt="">
+										<span class="g-name">HUAWEI FreeLace 无线耳机</span>
+										<span class="g-price">￥499</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/headImg/honor-fat.png" alt="">
+										<span class="g-name">荣耀体脂秤</span>
+										<span class="g-price">￥199</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 搜索框 -->
+			<div class="right">
+				<div class="search-bar">
+					<form action="get">
+						<input type="text" class="text" id="search-input"/>
+						<input type="button" class="s-btn"/>
+						<div class="search-key">
+							<a href="#">nova 5 Pro</a>
+							<a href="#">荣耀20i</a>
+						</div>
+					</form>
+					<!-- 搜索框提示 -->
+					<div class="search-drop hide">
+						<h6 class="title">热门搜索</h6>
+						<ul>
+							<li>
+								<a href="#">Mate20</a>
+							</li>
+							<li>
+								<a href="#">荣耀20</a>
+							</li>
+							<li>
+								<a href="#">HUAWEI P30</a>
+							</li>
+							<li>
+								<a href="#">nova5</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 大图 -->
+	<div class="banner inner" id="banner">
+		<a href="https://cppc.aihuishou.com/huaweicredit/activity?activity=HuaWeiAugustActivity">
+		</a>
+	</div>
+	<!-- 搜索 -->
+	<div class="search-box inner">
+		<h2 class="title">华为商城 以旧换新</h2>
+		<div class="intro">
+			闲置设备 抵价购买新机 价格更实惠<br/>
+			快速估价 免费上门 专业质检 便捷回收 收券购买新机 
+		</div>
+		<!-- 搜索框 -->
+		<div class="search-input">
+			<span class="icon-search"></span> 
+			<input type="text" placeholder="请输入您要卖的机器型号" id="banner-search-input"> 
+			<span class="icon-clear">×</span> 
+			<a href="#" id="banner-search-btn" title="二手手机回收｜旧手机回收｜二手手机交易－爱回收">搜索</a>
+		</div>
+		<div class="contact">
+			华为商城以旧换新服务由爱回收提供&nbsp;&nbsp;&nbsp; &nbsp;
+			<span class="top-policy-btn">查看《服务隐私条款》</span>
+			<br><br>
+			 服务热线 400-0990-166 客服时间 9:00~21:00       
+		</div>
+	</div>
+	<!-- 简单4步 轻松换新 -->
+	<div class="recycle-step-wrap">
+		<div class="inner">
+			<h2 class="title">简单4步 轻松换新</h2>
+			<ul>
+				<li class="step1">
+					<div class="name">在线估价</div>
+					<div class="desc">如实描述机器情况</div>
+				</li>
+				<li class="step2">
+					<div class="name">信用评估</div>
+					<div class="desc">进行信审评估</div>
+				</li>
+				<li class="step3">
+					<div class="name">发放预付款</div>
+					<div class="desc">评估通过可获得回收预付款</div>
+				</li>
+				<li class="step4">
+					<div class="name">旧机邮寄</div>
+					<div class="desc">专人上门取件</div>
+				</li>
+			</ul>
+			<a href="#" class="recycle-btn">立即评估</a>
+		</div>
+	</div>
+	<!-- 回收机型推荐 -->
+	<div class="promotion-wrap">
+		<h2 class="title">回收机型推荐</h2>
+		<ul>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/p20.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">华为 P20</span>
+					<span class="price">回收最高价
+                        <i>￥2090</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/Mate9.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">华为 Mate9</span>
+					<span class="price">回收最高价
+                        <i>￥1135</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/p20pro.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">华为P20 Pro</span>
+					<span class="price">回收最高价
+                        <i>￥2861</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/p9.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">华为P9</span>
+					<span class="price">回收最高价
+                        <i>￥436	</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/mate8.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">华为Mate8</span>
+					<span class="price">回收最高价
+                        <i>￥617	</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/mate8.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">华为Mate10Pro</span>
+					<span class="price">回收最高价
+                        <i>￥1809</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/honor8.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">荣耀8</span>
+					<span class="price">回收最高价
+                        <i>￥458</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/honor9.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">荣耀9</span>
+					<span class="price">回收最高价
+                        <i>￥786</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/honorv10.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">荣耀v10</span>
+					<span class="price">回收最高价
+                        <i>￥1803</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="img-box"><img src="../img/recycleImg/changwen6x.png" alt="二手华为 Mate9回收"></div>
+					<span class="name">荣耀畅玩6X</span>
+					<span class="price">回收最高价
+                        <i>￥335</i>
+                    </span>
+					<span class="discount">限时加价8%</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 以旧换新服务保障 -->
+	<div class="partner-wrap clearfix">
+		<div class="inner">
+			<h2 class="title">以旧换新 服务保障</h2>
+			<ul class="partner-content-wrap">
+				<li>
+					<div class="img item1"></div>
+					<div class="des">
+						<h2>信用回收</h2>
+						<p>先购新机 后寄出旧机<br> 最高立得2000元预付款</p>
+					</div>
+				</li>
+				<li>
+					<div class="img item2"></div>
+					<div class="des">
+						<h2>交易便捷</h2>
+						<p>支持快递邮寄，顺丰上门服务<br>北上广深部分地区上门质检</p>
+					</div>
+				</li>
+				<li>
+					<div class="img item3"></div>
+					<div class="des">
+						<h2>安全放心</h2>
+						<p>执行严密的隐私保护程序<br>保障信息安全</p>
+					</div>
+				</li>
+				<li>
+					<div class="img item4"></div>
+					<div class="des">
+						<h2>环保公益</h2>
+						<p>绿色环保、健康生活<br>减轻电子垃圾负担</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 服务指南 -->
+	<div class="qa-wrap">
+		<div class="qa-list inner">
+			<h2 class="title">服务指南</h2>
+			<div class="left">
+				<div class="qa-item">
+					<div class="qa-title">
+						<span class="text">什么是信用回收？</span>
+					</div>
+					<div class="qa-content">
+						综合您的芝麻分进行评估，600分及以上用户有机会享受下单先拿代金券，最高预付2000元代金券，实际质检结果完成，若最终金额大于预付代金券，2小时内补齐差价；若取消交易，或最终价低于预付代金券，会在和您确认后优先扣回预付代金券，若代金券不足或已使用，将从您开通的支付宝免密支付中扣回差价。<br>信用回收仅支持新版商城客户端 v1.6.8.0以上版本，且旧机回收价在100元以上。
+					</div>
+				</div>
+				<div class="qa-item">
+					<div class="qa-title">
+						<span class="text">手机寄出后多久能收到款项？钱打到哪里去？</span>
+					</div>
+					<div class="qa-content">
+						收到物品后我们会在48小时内完成检测，如质检通过，2小时内发放华为代金券到您的华为商城账户中。
+					</div>
+				</div>
+				<div class="qa-item">
+					<div class="qa-title">
+						<span class="text">成交后多久我可以收到华为代金券？</span>
+					</div>
+					<div class="qa-content">
+						回收订单成交后的 2小时内，您可在您的华为商城账号（个人中心-我的代金券）中进行查询。
+					</div>
+				</div>
+		</div>
+			<div class="right">
+				<div class="qa-item">
+					<div class="qa-title">
+						<span class="text">如何参与以旧换新？</span>
+					</div>
+					<div class="qa-content">
+						选择回收旧机型号描述旧机使用情况后获得报价，选择一种回收方式（信用回收、顺丰取件、质检师上门），回收成功后获得华为代金券，在华为商城购买新机时代金券抵扣新机款。
+					</div>
+				</div>
+				<div class="qa-item">
+					<div class="qa-title">
+						<span class="text">什么是华为代金券？收到代金券后如何买新机？</span>
+					</div>
+					<div class="qa-content">
+						华为代金券可在华为商城购买任意商品时抵扣，可分多次消费并且不设使用期限。在华为商城购买新机时使用华为代金券即可。
+					</div>
+				</div>
+				<div class="qa-item">
+					<div class="qa-title">
+						<span class="text">哪些类型的旧机不符合回收标准？</span>
+					</div>
+					<div class="qa-content">
+						山寨机、高仿机、脏机（偷捡抢）、黑机（苹果套保机）、微软Surface Book/Surface Laptop笔记本没有原装键盘的无法回收；出于您隐私安全考虑，所有无法开机/无法进入桌面/自动关机重启/有开机密码或iCloud等账户密码无法退出的机器也无法回收。同时在爱回收风控范围内的机器也不回收（如：机器短期内在爱回收有过交易记录）
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<footer>
+		<div class="inner">
+			<div class="logo">
+				<img src="../img/recycleImg/icon-logos.png" alt="logo">
+			</div>
+			<div class="up">
+				<a href="#">回收订单</a>
+				<a href="#">回收车</a>
+				<a href="#">查看代金券</a>
+				<a href="#">服务隐私条款</a>
+				<a href="#">在线客服</a>
+				<a href="#">帮助中心</a>
+			</div>
+			<div class="down">
+				<div class="left">本服务由常州悦亿网络信息技术有限公司（爱回收网）与华为联合提供</div>
+				<div class="right">以旧换新7 X 12小时服务热线：400-0990-166 (9:00 - 21:00)</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 侧边栏导航 -->
+	<div class="aside">
+		<div class="aside-nav" title="联系爱回收客服" id="help">
+			<div class="aside-icon"></div>
+			<div class="aside-text">客服</div>
+			<ul class="desc">
+				<li>机器人客服<br>7*24小时</li>
+				<li>人工客服<br>9:00-21:00</li>
+			</ul>
+		</div>
+		<div class="aside-nav" title="返回顶部" id="goTop" style="display: none">
+			<div class="aside-icon"></div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$('#goTop').click(function(event) {
+				$('html,body').animate({scrollTop:0},500);
+			});
+			$(window).scroll(function(event) {
+				if($(this).scrollTop()>$('.recycle-step-wrap').offset().top){
+					$('#goTop').show(500);
+				} else {
+					$('#goTop').hide(500);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

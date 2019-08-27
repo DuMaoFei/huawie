@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物车</title>
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/page_header.css">
+	<link rel="stylesheet" href="../css/tool_nav.css">
+	<link rel="stylesheet" href="../css/shop_cart.css">
+	<link rel="stylesheet" href="../css/shop_cart2.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/page_header.js"></script>
+	<script src="../js/tool_nav.js"></script>
+	<script src="../js/shopcart.js"></script>
+	<script src="../js/shopcart2.js"></script>
+</head>
+<body>
+	<!-- 导航 -->
+	<div class="shortcut">
+		<div class="layout clearfix">
+			<div class="s-sub">
+				<ul>
+					<li><a href="../index.html" target="_blank">首页</a></li>
+                	<li><a href="">华为官网</a></li>
+                	<li><a href="">荣耀官网</a></li>
+                	<li><a href="">花粉俱乐部</a></li>
+                	<li><a href="#">企业购</a></li>       
+                	<li><a href="#">Select Region</a></li>
+                	<!-- .drop-down下拉菜单 隐藏-->
+                	<li class="drop-down">                          		
+                		<a href="#" class="icon-dropdown">更多精彩</a>               		
+                		<div class="drop-down-more">
+                			<dl>
+                				<dt><a href="#">EMUI</a></dt>
+                				<dt><a href="#">应用市场</a></dt>
+                				<dt><a href="#">华为终端云空间</a></dt>
+                				<dt><a href="#">开发者联盟</a></dt>
+                			</dl>
+                		</div>
+                	</li>                	           
+				</ul>
+			</div>
+			<div class="s-main">
+				<ul>
+					<li>
+						<a href="login.html">请登录</a>
+						<a href="register.html">注册</a>
+					</li>
+					<li><a href="order.html">我的订单</a></li>
+					<li class="drop-down">
+						<a href="#" class="icon-dropdown">客户服务</a>
+						<div class="drop-down-more ddm2">
+                			<dl>
+                				<dt><a href="help_index.html">服务中心</a></dt>
+                				<dt><a href="#">联系客服</a></dt>               	
+                			</dl>
+                		</div>
+					</li>
+					<li class="drop-down">
+						<a href="" class="icon-dropdown">网站导航</a>
+						<div class="drop-down-more drop-nav clearfix">
+							<div class="ddm-nav-icons">
+								<a href="../index.html">
+									<p>
+										<img src="../img/headImg/index-icon.png" alt="">
+									</p>
+									<span>商城首页</span>
+								</a>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>频道</dt>
+									<dd>华为专区</dd>
+									<dd>企业购</dd>
+									<dd>荣耀专区</dd>		
+								</dl>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>产品</dt>
+									<dd>手机</dd>
+									<dd>智能家居</dd>
+									<dd>平板&笔记本</dd>
+									<dd>通用配件</dd>
+									<dd>专属配件</dd>
+									<dd>智能穿戴</dd>			
+								</dl>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>增值服务</dt>
+									<dd>以旧换新</dd>
+									<dd>补购保障</dd>
+									<dd>一口价换电池</dd>		
+								</dl>
+							</div>
+							<div class="ddm-nav-list">
+								<dl>
+									<dt>会员	</dt>
+									<dd>会员频道</dd>
+									<dd>企业购</dd>
+									<dd>荣耀专区</dd>		
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="icon-dropdown">手机版</a>
+						<div class="drop-down-more ddm-mobile clearfix">
+							<div class="ddm-code-detail">		
+								<div class="qr-code">
+									<img src="../img/headImg/vmall-qrcode3.png" alt="">
+								</div>
+								<div class="code-info">
+									<h2>华为商城APP</h2>
+									<p>新人专享好礼最高5000积分</p>
+									<span><img src="../img/headImg/android-logo.png" alt=""></span>
+									<span><img src="../img/headImg/wechat-logo.png" alt=""></span>
+								</div>
+							</div>		
+							<div class="ddm-code-detail">		
+								<div class="qr-code">
+									<img src="../img/headImg/vmall-qrcode2.jpg" alt="">
+								</div>
+								<div class="code-info">
+									<h2>华为商城公众号</h2>
+									<p>微信扫一扫</p>
+									<span><img src="../img/headImg/wechat-logo.png" alt=""></span>								
+								</div>
+							</div>
+							<div class="ddm-code-detail">		
+								<div class="qr-code">
+									<img src="../img/headImg/vmall-qrcode.jpg" alt="">
+								</div>
+								<div class="code-info">
+									<h2>微信小程序</h2>
+									<span><img src="../img/headImg/wechat-logo.png" alt=""></span>
+								</div>							
+							</div>							
+					</div>
+					</li>
+					<li class="drop-down">
+						<a href="">购物车(0)</a>
+						<div class="drop-down-more ddm-cart">
+                			<p></p>
+                			<p>您的购物车是空的，赶紧选购吧^_^</p>
+                		</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 导航下方的头部 -->
+	<div class="header">
+		<div class="layout clearfix">
+			<div class="left">
+				<div class="logo">
+					<a href="../index.html">
+						<img src="../img/headImg/huawei-shop-logo.png" alt="logo_pic">
+					</a>
+				</div>
+				<div class="naver">
+					<ul>
+						<li>
+							<h2>我的购物车</h2>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<div class="progress-area">
+					<div class="area"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 有购物车的结构和样式 -->
+	<section class="cart-container" id="hasCart">
+		<div class="layout">
+			<!-- 购物车标题 -->
+			<div class="title">
+				<label for="checkAll" class="checkbox">
+					<input id="checkAll">
+					全选
+				</label>
+				<ul>
+					<li>商品</li>
+					<li>单价</li>
+					<li>数量</li>
+					<li>小计</li>
+					<li>操作</li>
+				</ul>
+			</div>
+			<!-- 商品2 -->
+			<div class="cart-item cart-item2">
+				<!-- 首行的商品信息和相关操作 -->
+				<div class="cart-item-main clearfix">
+					<!-- 购物车商品图片和前面的选项 -->
+					<div class="check-img-box">
+						<label class="checkbox">
+							<input class="single-box">
+						</label>
+						<a href="#" class="a-img">
+							<img src="../img/cartImg/hot-goods00.png" alt="mate20">
+						</a>
+					</div>
+					<!-- 商品信息及删除 -->
+					<ul>
+						<li>
+							<a href="goodsInfo.html" class="goods-name">
+                            HUAWEI Mate 20 Pro (UD)  麒麟980 AI芯片 超广角徕卡三摄 OLED曲面屏 屏内指纹 8GB+128GB 全网通版（翡冷翠）
+							</a>
+						</li>
+						<li class="per-price">¥<span>5099.00</span></li>
+						<li>
+							<div class="count-area">
+								<input type="number" class="count" value="1" id="count" max="20">
+								<p class="count-btn">
+									<a href="javascript:void(0)" id="subtract">-</a>
+									<a href="javascript:void(0)" id="add">+</a>
+								</p>
+							</div>
+							
+						</li>
+						<li class="total">¥<span>5099.00</span></li>
+						<li>
+							<a href="javascript:;" id="del-item" class="del-btn">
+								删除
+							</a>
+							
+						</li>
+					</ul>
+				</div>
+				<!-- 商品首行下方的服务提示 -->
+				<div class="service-tips">
+					<div class="part1 clearfix">
+						<h2>服务</h2>
+						<div class="serivce-main">
+							<ul>
+								<li>
+									<span class="text1">无忧服务</span>
+									<span class="text2 text-arrow">
+										可选购无忧服务
+									</span>											
+								</li>
+								<li>
+									<span class="text1">碎屏服务宝</span>
+									<span class="text2">可选购碎屏服务宝</span>		
+								</li>
+								<li>
+									<span class="text1">延长服务宝</span>
+									<span class="text2">可选购延长服务宝</span>
+								</li>
+							</ul>
+						</div>
+						<!-- 鼠标移入服务提示 -->
+						<div class="service-main-drop">
+							<ul class="clearfix">
+								<li>无忧服务</li>
+								<li>
+									<label for="checkAll" class="checkbox">
+										<input>
+									</label>
+										华为无忧服务￥969
+								</li>
+							</ul>
+							<ul class="clearfix">
+								<li>碎屏服务宝</li>
+								<li>
+									<label for="checkAll" class="checkbox">
+										<input>
+									</label>
+										碎屏服务宝1年￥299
+								</li>
+								</ul>
+							<ul class="clearfix">
+								<li>延长服务宝</li>
+								<li>
+									<label for="checkAll" class="checkbox">
+										<input>
+									</label>
+										延长服务宝1年￥218
+								</li>
+								<li>
+									<label for="checkAll" class="checkbox">
+										<input>
+									</label>
+										延长服务宝1年￥198
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 服务提示配 -->
+					<div class="part2 clearfix">
+						<h2>配</h2>
+						<ul class="clearfix">
+							<li>
+								<img alt="" src="../img/cartImg/adapter.png">
+							</li>
+							<li>华为无线充电器(Max 15W)白色 白色</li>
+							<li>×1</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 推荐搭配 -->
+			<div class="dapei">
+				<div class="inner clearfix">
+					<h2>
+						推荐搭配
+					</h2>
+					<!-- 推荐搭配商品列表 -->
+					<ul>
+						<li>
+							<img src="../img/cartImg/erji1.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">HUAWEI FreeBuds 2 Pro无线耳机(碳晶黑)</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/erji1.png" alt="">
+									</span>
+									<span class="sm-img">
+										<img src="../img/cartImg/erji2.png" alt="">
+									</span>
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>899</i></span>
+									<s>¥999</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>
+						<li>
+							<img src="../img/cartImg/huawei-cunchu.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">
+									华为备咖存储（英伦灰）
+								</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-cunchu.png" alt="">
+									</span>
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>699</i></span>
+									<s>¥999</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>
+						<li>
+							<img src="../img/cartImg/huawei-dianbao.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">
+									华为40W超级快充移动电源 （宝石蓝）
+								</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-dianbao.png" alt="">
+									</span>
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-dianbao-white.png" alt="">
+									</span>
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>299</i></span>
+									<s>¥369</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>	
+						<li>
+							<img src="../img/cartImg/huawei-nmcard.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">
+									华为NM存储卡（64GB）
+								</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-nmcard.png" alt="">
+									</span>
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-nmcard.png" alt="">
+									</span>
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>199</i></span>
+									<s>¥999</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>
+						<li>
+							<img src="../img/cartImg/huawei-ai.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">华为AI音箱(太空黑)</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-ai.png" alt="">
+									</span>
+									<span class="sm-img">
+										<img src="../img/cartImg/huawei-ai-white.png" alt="">
+									</span>
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>299</i></span>
+									<s>¥399</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>
+						<li>
+							<img src="../img/cartImg/mate20-ke.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">
+									HUAWEI Mate 20 Pro 硅胶保护壳 （柠檬黄）
+								</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/mate20-ke.png" alt="">
+									</span>
+									
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>399</i></span>
+									<s>¥999</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>
+						<li>
+							<img src="../img/cartImg/mate20-qianshui.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">
+									HUAWEI Mate 20 Pro 潜水保护壳 （深蓝色）
+								</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/mate20-qianshui.png" alt="">
+									</span>
+									
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>299</i></span>
+									<s>¥699</s>
+									<a href="javascript:void(0)" class="add-btn">
+									</a>
+								</span>
+							</div>	
+						</li>
+						<li>
+							<img src="../img/cartImg/mate20-heitao.png" alt="">
+							<div class="dapei-item">
+								<a href="javascript:void(0)">HUAWEI Mate 20 Pro 智能视窗保护套 （黑色）</a>
+								<span class="sm-img-box">
+									<span class="sm-img">
+										<img src="../img/cartImg/mate20-heitao.png" alt="">
+									</span>
+									
+								</span>
+								<span class="dapei-item-price">
+									<span>¥<i>299</i></span>
+									<s>¥399</s>
+									<a href="javascript:void(0)" class="add-btn"></a>
+								</span>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 结算 -->
+			<div class="pay clearfix">
+				<span class="check-del">
+					<label for="checkAll2" class="checkbox">
+					<input id="checkAll2">
+					全选
+					</label>
+					<a href="javascript:;" id="del-all" class="del">删除</a>
+				</span>
+				
+				<a href="#" class="pay-btn">
+					立即结算
+				</a>
+				<span class="pay-info">
+					<p class="top">总计:
+						<span class="pay-money">¥&nbsp;<span>5099.00</span></span>
+						<!-- 小问号 -->
+						<em>
+							<b class="sm-tip">不含运费</b>
+						</em>
+					</p>
+					<p class="bottom">
+						已选择<em style="color:#ca151e;font-weight: bold">0</em>
+						件商品,优惠<span>¥&nbsp;0.00</span>
+					</p>
+				</span>
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- 没有购物车的样式 -->
+	<section class="cart-container" id="emptyCart" style="display: none;">
+		<div class="layout">
+			<!-- 没有登录提示 -->
+			<div class="no-login">
+				<span class="icon-tips">
+					<img src="../img/cartImg/icon-tips01.png" alt="">
+				</span>
+				<span class="tips">
+					您还没有登录！登录后可查看之前加入的商品 
+				</span>
+				<a href="login.html">登录</a>
+			</div>
+			<!-- 空空如也 -->
+			<div class="cart-empty">
+				<span class="cart-empty-img"></span>
+				<p>您的购物车里什么都没有哦~</p>
+				<a href="../index.html">去逛逛</a>
+			</div>
+			<!-- <h3 class="cart-title">热销推荐</h3>
+			<div class="hot-goods-r">
+				<ul>
+					<li>
+						<a href="#">
+							<img alt="pic" src="../img/cartImg/hot-goods-honor20.png">
+							<h6>荣耀20</h6>
+						</a>
+						<span class="price">￥2699</span>
+					</li>
+					<li>
+						<a href="goodsInfo.html">
+							<img alt="pic" src="../img/cartImg/hot-goods00.png">
+							<h6>Mate 20 Pro</h6>
+						</a>
+						<span class="price">￥5099</span>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="pic" src="../img/cartImg/hot-goods6.png">
+							<h6>荣耀v20</h6>
+						</a>
+						<span class="price">￥2699</span>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="pic" src="../img/cartImg/hot-goods4.png">
+							<h6>Huawei nova5</h6>
+						</a>
+						<span class="price">￥2999</span>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="pic" src="../img/cartImg/hot-good3.png">
+							<h6>HUAWEI P30 Pro</h6>
+						</a>
+						<span class="price">￥5488</span>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="pic" src="../img/cartImg/hot-goods8.png">
+							<h6>荣耀20i</h6>
+						</a>
+						<span class="price">￥1399</span>
+					</li>
+				</ul>
+				<span class="arrow ar-left">&lt;</span>
+				<span class="arrow ar-right">&gt;</span>
+			</div> -->
+		</div>
+	</section>
+	<!-- 侧边导航 -->
+	<div class="tool-nav">
+		<ul>
+			<li>
+				<a href="#" class="tool-nav-cart">
+					<i>购物车</i>
+					<span>1</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="tool-nav-service">
+					<i>在线客服</i>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="tool-nav-feedback">
+					<i>意见反馈</i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="tool-nav-backtop">
+					<i>返回顶部</i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<iframe src="bottom.html" frameborder="0" scrolling="no" width="100%" height="374px" name="bottom-iframe" class="page-bottom"></iframe>
+</body>
+</html>

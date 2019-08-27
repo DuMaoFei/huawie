@@ -1,0 +1,383 @@
+span>a{
+	text-decoration: none;
+	color:#007dff;
+}
+
+input{
+	border: none;
+}
+.inputStyle {
+	vertical-align:middle; 
+	margin-top:-2px; 
+	margin-bottom:1px;
+}
+
+.header{
+	height: 110px;
+}
+.upside{
+	background: #ebebeb;
+	height: 70px;
+	overflow: hidden;
+}
+.upside>div{
+	height: 33px;
+	width: 260px;
+	margin:  18px 0 0 225px;
+	line-height: 33px;
+	position: relative;
+}
+#logo{
+	display: block;
+	float: left;
+	position: relative;
+	top: -2px;
+	
+}
+#titl{
+	font-size: 18px;
+	display: block;
+	float: right;
+}
+.downside{
+	background: #fffbe4;
+	height: 40px;
+}
+#warning{
+	height: 100%;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	line-height:40px;
+}
+#warning>img{
+	height: 14px;
+	margin-top: -3px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+.box{
+	height: 590px;
+	background: #081638 url(../img/da_img/login/登录背景.png) no-repeat;
+	background-position:50% 0;
+	overflow: hidden;
+}
+
+.footer{
+	height: 100px;
+}
+.loginBox{
+	width: 380px;
+	height: 530px;
+	background: white;
+	margin: 30px 0 0 900px;
+}
+.way{
+	position: relative;
+	height: 70px;
+}
+.way>span{
+	display: block;
+	float: left;
+	width: 190px;
+	height: 70px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 70px;
+}
+.way>span>span{
+	cursor: pointer;
+}
+#way1:hover,#way2:hover{
+	color: #b40707;
+}
+.way>span.active{
+	color: #b40707;
+}
+.bar{
+	position: absolute;
+	width: 0px;
+	border-left: 1px solid #ccc;
+	left:50%;
+	top:50%;
+}
+.bar0{
+	height: 20px;
+	margin-top: -10px;
+	left: 63%;
+}
+.bar1{
+	height: 20px;
+	margin-top:-7px;
+}
+#log_input{
+	position: relative;
+	padding-top:1px;
+}
+#log_input>*{
+	display: block;
+}
+#log_input>.log_error{
+	position: absolute;
+	vertical-align: middle;
+	top:-8px;
+	left: 25px;
+	font-size: 12px;
+	color: #ff3320;
+	display: none;
+}
+.log_error>img{
+	position: relative;
+	top: 1px;
+}
+.input_txt{
+	height: 40px;
+    font-size: 14px;
+    width: 330px;
+    margin: 10px auto;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.input_txt_error{
+	border-bottom-color: #ffc1bb;
+}
+.txt_login{
+	font-size: 12px;
+	margin:25px 0 0 25px ;
+	cursor: pointer;
+}
+.txt_login>a{
+	color:#007dff;
+}
+.focus_button:hover>a{
+	color:#0064cc;
+}
+#log{
+	cursor: pointer;
+	margin: 16px auto 0px;
+	display: block;
+	width: 330px;
+	height: 45px;
+	border: none;
+	border-radius: 22.5px;
+	color: white;
+	text-align: center;
+	line-height: 45px;
+	background:#b40707;
+	font-weight: bold;
+}
+#log:hover{
+	background: #c70000;
+}
+.remember{
+	position: relative;
+	height: 30px;
+}
+.relog{
+	height: 20px;
+	font-size: 12px;
+	margin:20px 0 0 30px;
+	float: left;
+	cursor: pointer;
+
+}
+.relog>input{
+	position: relative;
+	width: 15px;
+	height: 15px;
+}
+.relog>label[for='relog']{
+	display: inline-block;
+	cursor: pointer;
+}
+.relog_active::after{
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	position:absolute;
+	top: -2px;
+	left: -2px;
+	background: url(../img/da_img/login/复选栏选中.png) no-repeat;
+	
+}
+.retip{
+    width: 310px;
+    height: 60px;
+    background: white;
+    box-shadow: 0px 1px 5px 0px #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: -50px;
+    font-size: 12px;
+    padding:10px;
+    left: 35px;
+    display: none;
+}
+.retip::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    bottom: -5px;
+    left: 14%;
+    background: white;
+    box-shadow: 0 2px 2px 1px #ccc;
+}
+.retip::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    bottom: 0px;
+    left: 14%;
+    background: white;
+}
+#more{
+	display: block;
+	float: right;
+	font-size: 12px;
+	margin:20px 30px 0 0;
+	color: #007DFF;
+	cursor: pointer;
+}
+#more:hover{
+	color:#0064cc;
+}
+.sign{
+	text-align: center;
+    margin-top: 20px;
+	position: relative;
+}
+.sign>span{
+	color: #007DFF;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	width:84px;
+}
+.sign>span:nth-of-type(2){
+	width: 72px;
+}
+.bar2{
+	height: 12px;
+	margin-top: -4px;
+	cursor: default;	
+}
+#other{
+	margin: 90px 0 0 0;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	color: #ccc;
+	overflow: hidden;
+}
+#other>img{
+	margin: 6px 10px;
+}
+
+#other_way{
+	width:160px;
+	height: 45px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+#other_way span{
+	cursor: pointer;
+	width: 42px;
+	height: 42px;
+	background: url(../img/da_img/login/登录图片精灵.png) no-repeat;
+	display: inline-block;
+	cursor: pointer;
+}
+span#qq{
+	float: left;
+	background-position: -72px -9px;
+}
+span#pay{
+	background-position: -132px -9px;	
+}
+span#wech{
+	float: right;
+	background-position: -12px -9px;
+}
+span#qq:hover{
+	float: left;
+	background-position: -72px -55px;
+}
+span#pay:hover{
+	background-position: -132px -55px;	
+}
+span#wech:hover{
+	float: right;
+	background-position: -12px -55px;
+}
+.code_area{
+	height: 300px;
+	text-align: center;
+}
+.code_box{
+	position: relative;
+	height: 250px;
+}
+.code_box>img{
+	position: absolute;
+	top: 50px;
+}
+#code{
+	transition: all 0.5s;
+	left: 50%;
+	margin-left:-75px;
+}
+#code_phone{
+	top: 25px;
+	right:5%;
+	display: none;
+}
+
+.tip{
+	font-size: 12px;
+	line-height: 24px;
+}
+#huaapp{
+	color: #007DFF;
+}
+#code.code_active{
+	margin-left: 0;
+	left: 5%;
+}
+.footer{
+	background: #EBEBEB;
+	
+}
+.footer_banner{
+	width: 635px;
+	height: 100%;
+	margin: 0px auto;
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;
+}
+.cookies{
+	margin: 20px auto 0;
+}
+.cookies>span{
+	margin: 0 10px;
+	cursor: pointer;
+}
+.cookies>a{
+	color: #999;
+	text-decoration: none;
+}
+.cookies>a:hover{
+	text-decoration: underline;
+}
+.copyright{
+	margin-top: 15px;
+}

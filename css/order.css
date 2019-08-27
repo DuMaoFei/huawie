@@ -1,0 +1,146 @@
+/*
+* @Author: admin
+* @Date:   2019-08-06 18:54:36
+* @Last Modified by:   admin
+* @Last Modified time: 2019-08-06 20:03:49
+*/
+.layout{
+	width: 1200px;
+	margin: 0 auto 48px;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+}
+ul{
+	list-style: none;
+}
+.bread{
+	color: #666;
+	font-size: 12px;
+	margin-top: 16px;
+}
+.bread>a{
+	color: #666;
+}
+.order-box{
+	display: flex;
+	margin-top: 10px;
+}
+.order-box>aside{
+	width: 176px;
+    line-height: 34px;
+    border-radius: 10px;
+    border: 2px solid #f5f5f5;
+}
+aside .aside-title{
+	font-size: 18px;
+	color: #cf0a2c;
+	border-bottom: 1px solid #f6f6f6;
+	padding:4px 8px 4px 26px;
+}
+.aside-content li{
+	border-bottom: 1px solid #f6f6f6;
+	padding: 6px 10px 6px 26px;
+}
+.aside-content li:last-child{
+	border-bottom: 0;
+}
+.aside-content li>h3{
+	color: #444;
+	font-size: 14px;
+}
+.aside-content li>a{
+	color: #777;
+	font-size: 14px;
+	display: block;
+}
+.main-order{
+	width: 954px;
+	margin-left: 56px;
+}
+.main-order header{
+	width: 100%;
+	border-bottom: 1px solid #dedede;
+}
+.main-order>header>h1{
+	font-weight: normal;
+	float: left;
+}
+.main-order>header>div{
+	float: right;
+}
+.main-order>header>div span{
+	color: #888;
+	font-size: 14px;
+	padding: 0 13px;
+	height: 100%;
+	line-height: 42px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+}
+.main-order>header>div span:hover{
+	color: #333;
+	border-bottom: 1px solid #000;
+}
+.order-type{
+	margin-top: 16px;
+}
+.order-type>ul{
+	display: flex;
+}
+.order-type>ul>li{
+	margin-right: 10px;
+	padding: 5px 16px;
+	font-size: 14px;
+    background-color: #f2f2f2;
+}
+.order-type>ul>li.current{
+	background-color: #2d2d2d;
+}
+.order-type>ul>li>a{
+	font-size: 14px;
+	color:#666;
+}
+.order-title{
+	width: 100%;
+	padding: 13px 0;
+    margin: 20px 0;
+    background-color: #fafafa;
+}
+.order-title>table{
+	width: 100%;
+}
+.order-title th{
+	font-size: 14px;
+	font-weight: normal;
+    color: #888;
+    height: 14px;
+    line-height: 14px;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    text-align: center;
+}
+.order-title th:first-child{
+	width: 500px;
+	border-left: #f5f5f5;
+}
+.order-title th:last-child{
+	border-right: #f5f5f5;
+}
+.list-group{
+	width: 100%;
+}
+.list-group-empty{
+	width: 100%;
+	font-size: 14px;
+    color: #888;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 50px 0;
+}
+
+
+

@@ -1,0 +1,491 @@
+/* 注册 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+    color: #a3a3a3;
+}
+ul li{
+    list-style: none;
+}
+body{
+    background: #f2f2f2;
+}
+.head_bg{
+    width: 100%;
+    height: 67px;
+    background-color: #333;
+}
+.head_center{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    border: 1px solid #333;
+   box-sizing: border-box;
+
+}
+.input-validation{
+    position: relative;
+}
+.mm-validation{
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px #ccc;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    color: #888;
+    line-height: 1.5em;
+    top: -160px;
+    display: none;
+}
+.mm-validation::after{
+    content: '';
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ccc;  
+    width: 0;
+    position: absolute;
+    bottom: -9px;
+    left:50%;
+    margin-left: -4px;
+    z-index: 1;
+}
+.mm-validation .one{
+    color: #000;
+}
+.email-validations{
+    color: #c70000;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.show-mm{
+    color: #c70000;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.mms-validation{
+    color: #c70000;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.tel-validation{
+    color: #c70000;
+    font-size: 12px;
+    margin-left: 15px;
+   
+}
+.register_logo{
+    margin-left: 4px;
+    margin-top: 17px;
+}
+.register_middle{
+    margin-top: 50px;
+}
+.register_middle .left {
+    float: left;
+    
+}
+.register_middle .left a{
+    width: 146px;
+    height: 35px;
+    line-height: 35px;
+    background: #ccc;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.register_middle  .left .active-bg{
+    background: #b40707;
+}
+.register_middle .left a i{
+    background: url('../img/fei_img/reg-img01.png')no-repeat;
+    width: 14px;
+    height: 22px;
+    display:inline-block;
+    background-position: 0px -18px;
+    position: absolute;
+    top: 6px;
+    left: 25px;
+}
+.register_middle .left a span{
+    margin-left: 30px;
+}
+.register_middle .left a:first-child span{
+    margin-left: 20px;
+}
+.register_middle .left a:last-child i{
+    background-position: 0px 0px;
+    width: 22px;
+    height: 17px;
+    top: 9px;
+    left: 20px;
+}
+.register_middle .right{
+    float: right;
+    height: 35px;
+    line-height: 35px;
+}
+.register_middle .right a{
+    color: #000;
+}
+.register_middle .right span{
+    color: #007dff;
+}
+.register_middle  .active{
+    background: #b40707;
+}
+.plone-div{
+    background: #fff;
+    padding: 30px 270px;
+    font-size: 14px;
+    display: none;
+}
+.plone-div .input-container{
+    position: relative;
+    margin: 10px 0;
+   
+}
+.left-input-parent{
+    width: 90px;
+    position: relative;
+}
+.plone-div .left-input {
+    width: 100%;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    background: #f7f7f7;
+    text-align: center;
+    letter-spacing: 5px;
+    float: left;
+    height: 42px;
+    line-height: 42px;
+}
+.right-input-parent{
+    width: 295px;
+    margin-left: 124px;
+    position: relative;
+   
+} 
+.plone-div .right-input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-left-color: transparent;
+    border-radius: 0px 20px 20px 0;
+    background: #f7f7f7;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    outline: none;
+}
+.plone-div .icon{
+    width: 12px;
+    height: 12px;
+    background: url('../img/fei_img/triangle_green.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right:20px;
+    cursor: pointer;
+}
+.order_container{
+    min-width: 136px;
+    max-width: 290px;
+    width: 290px;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 2px #eee;
+    font-family: '微软雅黑';
+    overflow: auto;
+   display: none;
+   position: absolute;
+   top: 42px;
+   z-index: 1;
+    
+}
+.order_container_one{
+    min-width: 136px;
+    max-width: 290px;
+    width: 290px;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 2px #eee;
+    font-family: '微软雅黑';
+    overflow: auto;
+   display: none;
+   position: absolute;
+   top: 42px;
+   z-index: 1;
+}
+.order_container::-webkit-scrollbar{
+    display: none;
+}
+.order_content{
+    padding: 16px 16px 10px;
+}
+.order_content .search{
+    height: 32px;
+    border-radius: 16px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: #f7f7f7;
+    width: 100%;
+
+}
+.flow-label{
+    line-height: 20px;
+    
+    font-size: 12px;
+    margin: 10px 0;
+}
+.flow-label .orderItem{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.flow-label .orderItem:hover{
+    color: #007dff;
+}
+ .info-list{
+    height: 20px;
+    line-height: 20px;
+    background: #f7f7f7;
+    font-size: 12px;
+    padding-left: 10px;
+    padding: 0 16px;   
+}
+ .list li{
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 16px;
+    font-size: 12px;
+
+}
+ .list li:hover{
+    background-color: rgba(0,125,255,0.2);
+}
+
+.plone-div .icon-one{
+    width: 12px;
+    height: 12px;
+    background: url('../img/fei_img/triangle_green.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right:10px;
+    cursor: pointer;
+}
+.plone-div .nth_2 .left-input{
+    letter-spacing: 8px;
+}
+.plone-div .nths_2 .left-input{
+    text-align: left;
+    letter-spacing: 0px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.plone-div .input-container:nth-child(3) .left-input{
+    letter-spacing: 4px;
+}
+
+.plone-div .input-container:nth-child(5) .left-input{
+    letter-spacing: 8px;
+}
+.plone-div .nths_2 .left-input{
+    letter-spacing: 8px;
+}
+.plone-div .nth_6 .left-input{
+    text-align: left;
+    letter-spacing: 0px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+.plone-div .nth_7 .left-input{
+    letter-spacing: 8px;
+}
+.plone-div .nth_8 .left-input{
+    letter-spacing: 8px;
+}
+.right-input-parent .right-btn{
+    position: absolute;
+    outline: none;
+    background: transparent;
+    border: none;
+    top: 50%;
+    margin-top: -8.5px;
+    right: 20px;
+    color: #007dff;
+    cursor: pointer;
+}
+.icon-year{
+    width: 12px;
+    height: 12px;
+    background: url('../img/fei_img/triangle_green.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    cursor: pointer;
+    left:74px;
+  
+ 
+}
+.year{
+    position: relative;
+}
+.order-year,
+.order-month,
+.order-day{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0  0 2px 2px #eee;
+    height: 200px;
+    overflow: auto;
+    display: none;
+}
+.order-year::-webkit-scrollbar,
+.order-month::-webkit-scrollbar,
+.order-day::-webkit-scrollbar{
+    display: none;
+}
+.order-year li,
+.order-month li,
+.order-day li{
+    line-height: 31px;
+    height: 31px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #333;
+}
+.order-year li::after,
+.order-month li::after,
+.order-day li::after{
+    content: '';
+    width:130px;
+    height: 1px;
+    display: block;
+    background: #ccc;
+    text-align: center;
+}
+.order-year li:hover,
+.order-month li:hover,
+.order-day li:hover{
+    background-color: rgba(0,125,255,0.2);
+}
+.month{
+    position: relative;
+    width: 31px;
+    display: inline-block;
+    margin-left:47px;
+    height: 44px;
+}
+.month span{
+    width: 31px;
+    height: 44px;
+    text-align: center;
+    display: inline-block;
+ 
+}
+.order-month{
+    top: 42px;
+}
+
+.icon-month{
+    width: 12px;
+    height: 12px;
+    background: url('../img/fei_img/triangle_green.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    cursor: pointer;
+    left: 148px;
+}
+.day{
+    margin-left:28px;
+    position: relative;
+}
+.day span{
+    margin-left:-1px;
+    position: relative;
+    width: 31px;
+    text-align: center;
+    display: inline-block;
+    height: 44px;
+}
+.icon-day{
+    width: 12px;
+    height: 12px;
+    background: url('../img/fei_img/triangle_green.png') no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    cursor: pointer;
+    left: 210px;
+}
+.red-btn{
+    margin:40px 0 30px;
+   text-align: center;
+}
+.red-btn input{
+    outline: none;
+    background: #b40707;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #b40707;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.red-btn input:hover{
+    background-color: #c70000;
+    border-color: #c70000;
+}
+.register_middle hr{
+    margin-top: 50px;
+}
+.footer{
+    text-align: center;
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-top: 40px;
+}
+.footer em{
+ font-style: normal;
+ font-size: 12px;
+ margin: 0 10px;
+}
+.footer p{
+    margin: 10px 0;
+    
+}

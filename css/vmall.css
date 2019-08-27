@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	min-width: 1280px;
+	max-width:1920px;
+	margin:0 auto;
+}
+img{
+	vertical-align: top;
+}
+/* .clearfix::after{
+	content: "";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+} */
+
+ul{
+	list-style: none;
+}
+.topNav{
+	width: 100%;
+	height:110px;
+	background: yellow;
+}
+
+.topAdv{
+	width: 100%;
+	height: 450px;
+
+}
+/*
+.r_navBox{
+	width:115px;
+	height: 100%;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}*/
+
+.banner{
+	width: 1200px;
+	margin: 0px auto;
+}
+
+
+.footer{
+	height: 400px;
+}

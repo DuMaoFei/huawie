@@ -1,0 +1,252 @@
+		*{
+			margin: 0;
+			padding:0;
+			font-family: "微软雅黑";
+		}
+		.icon {
+			width: 1em;
+			height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		  }
+		  .icon-wechat:hover{
+			  color: lightgreen;
+		  }
+		  .icon-toutiao:hover{
+			  color: rgba(0, 0, 0,0.3);
+		  }
+		.clearfix{}
+		.clearfix::before, .clearfix::after{
+			display: table;
+			content: "";
+		}
+		.clearfix::after{
+			clear: both;
+		}
+		.slogan-container,.service-container{
+			background: #f9f9f9;
+		    width: 100%;
+		    min-width: 1200px;
+		}
+		.slogan {
+		    padding: 22px 0 20px;
+		    width: 1200px;
+		    margin: 0 auto;
+		}
+		.slogan ul{
+			list-style: none;
+		}
+		.slogan li{
+			float: left;
+			font-size: 18px;
+		    color: #333;
+		    height: 40px;
+		    line-height: 40px;
+		    text-align: center;
+		    padding-right:118px;
+		}
+		.slogan li:last-child{
+			padding-right: 0;
+		}
+		.slogan a{
+			cursor: pointer;
+			text-decoration: none;
+    		color: #3a3a3a;
+		}
+		.slogan span{
+			display: inline-block;
+		    vertical-align: middle;
+		    width: 40px;
+		    height: 40px;
+		    margin-right: 15px;
+		    background: url(../img/bottomImg/icon01.svg) no-repeat;
+		}
+		.slogan .slogan-icon1{
+			background-position: -74px 0;
+		}
+		.slogan .slogan-icon2{
+			background-position: -154px 0;
+		}
+		.slogan .slogan-icon3{
+			background-position: -194px 0;
+		}
+		.slogan .slogan-icon4{
+			background-position: -114px 0;
+		}
+		.service {
+		    border-top: 1px solid #e5e5e5;
+		    border-bottom: 1px solid #e5e5e5;
+		    padding: 23px 0 24px;
+		    width: 1200px;
+		    margin: 0 auto;
+		}
+		.service .service-left {
+		    width: 920px;
+		    height: 155px;
+		    padding-top: 5px;
+		    border-right: 1px solid #e5e5e5;
+		    float: left;
+		}
+		.service .service-right {
+		    width: 279px;
+		    min-height: 160px;
+		    margin-top: 2px;
+		    text-align: center;
+		    float: left;
+		}
+		.service-left .title{
+			font-size: 14px;
+			color: #333;
+			padding-bottom: 7px;
+		}
+		.service-left dl{
+			float: left;
+			width:183px;
+			overflow: hidden;
+		}
+		.service dd li{
+			height: 25px;
+		}
+		.service dd a{
+			text-decoration: none;
+			color: #777;
+			font-size: 12px;
+			cursor: pointer;
+		}
+		.service dd a:hover{
+			color:#CA151D;
+		}
+		.service ol{
+			list-style: none;
+		}
+		.service-left .link-dl{
+			position: relative;
+		}
+		.service-left .link-dl .link-dd{
+			width: 549px;
+			margin-left: 0;
+		}
+		.service-left .link-dl .link-dd ol{
+			float: left;
+			width: 183px;
+		}
+		.service-left .link-dl #left,.service-left .link-dl #right{
+			cursor: pointer;
+		}
+		.service-left .link-dl #left{
+			cursor: not-allowed;
+		}
+		.service-right dl{
+			margin-left: 28px;
+		}
+		.service-right dt{
+			font-size:24px;
+			color: #575757;
+			font-weight: bold;
+		}
+		.service-right dd{
+			font-size: 14px;
+			padding-top: 16px;
+		}
+		.service-right button{
+			width: 170px;
+			height: 34px;
+			margin: 0 auto;
+			line-height: 34px;
+			background: #333;
+			color: white;
+			font-size: 14px;
+			cursor: pointer;
+			border: 1px solid transparent;
+			border-radius: 17px;
+			outline:none;
+		}
+		.service-right button:hover{
+			background: #777777;
+		}
+		.service-right .focus-icon a{
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			font-size: 24px;
+			position: relative;
+			top: 2px;
+		}
+		.service-right .focus-icon a.wechat-qrcode:hover .service-right .focus-icon .under-qrcode-box{
+			display: block;
+		}
+		.service-right .focus-icon .under-qrcode-box{
+			width: 82px;
+			height: 82px;
+		    position: absolute;
+		    z-index: 400;
+		    top: 36px;
+		    left: -30px;
+		    display: none;
+		}
+		.service-right .focus-icon .under-qrcode{
+			width: 70px;
+		    border: 6px solid #fff;
+		}
+		.service-right .focus-icon .under-qrcode-box::before{
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 6px solid transparent;
+			border-bottom: 6px solid #fff;
+			left: 50%;
+			top: -12px;
+			margin-left: -3px;
+		}
+		.footer-container{
+			width: 100%;
+			background: #f9f9f9;
+		}
+		.footer{
+			width: 1200px;
+			margin: 0 auto;
+			padding: 22px 0 22px;
+			color: #666;
+			line-height: 1.5;
+		}
+		.footer>.bottom-logo{
+			float: left;
+			width: 82px;
+			height: 20px;
+		}
+		.footer ul{
+			list-style: none;
+		}
+		.footer ul li{
+			float: left;
+			border-right:1px solid #D3D3D3;
+			padding-left:12px;
+			padding-right: 12px;
+			font-size: 12px;
+			color: #777777;
+			cursor: pointer;
+		}
+		.footer li:last-child{
+			border-right: 0;
+		}
+		.footer ul li:hover{
+			color:#ca151d;
+		}
+		.footer a{
+			color: #a4a4a4;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		.footer a:hover{
+			color:#ca151d;
+		}
+		img.bottom-right{
+			position: relative;
+			left: 115px;
+			width: 70px;
+			height: 24px;
+		}
+	

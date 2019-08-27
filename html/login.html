@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/vmall.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/vmall03.css"/>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/login.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="header">
+			<div class="upside">
+				<div class="clearfix">
+					<span id="logo">
+						<img src="../img/da_img/login/HUAWEI.png" alt="" />
+					</span>
+					<div class="bar bar0"></div>
+					<span id="titl">
+						华为商城
+					</span>
+				</div>
+			</div>
+			<div class="downside">
+				<p id="warning">
+					<img src="../img/da_img/login/注意.png" alt="" />
+					<span>依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+				</p>
+			</div>
+			
+		</div>
+		<!--中部盒子-->
+		<div class="box">
+			<!--登录窗口-->
+			<div class="loginBox clearfix">
+				<div class="way clearfix">
+					<span class="active">
+						<span id="way1">帐号登陆</span>
+					</span>
+					<div class="bar bar1"></div>
+					<span>
+						<span id="way2">扫码登陆</span>
+					</span>
+				</div>
+
+				<form action="#" method="get" id="log_input" class="clearfix" >
+					<div class="log_error">
+						<img src="../img/da_img/login/登录失败.png" alt="" />&nbsp; <span id="error_type"></span>
+					</div>
+					<input type="text" class="input_txt" name="user" id="user" value="" placeholder="手机号/邮箱地址/华为号"/>
+					<input type="password" class="input_txt"  name="passwd" id="passwd" value="" placeholder="密码"/>
+					<span class="txt_login focus_button"><img src="../img/da_img/login/短信登陆.png"/><a href="#" title="短信验证码登陆">短信验证码登录</a></span>
+					<button id="log">登录</button>
+					<div class="clearfix remember">
+						<div class="relog">
+							<input type="checkbox" name="relog" id="relog" value="" class="inputStyle"/>
+							<label for="relog">记住华为账号</label>								
+						</div>
+						<div class="retip">
+							在公用电脑上不要选择此项，推荐在个人电脑上选择此项。
+						</div>
+						<span class="focus_button" id="more"><a href="#" title="更多">更多</a></span>					
+					</div>
+				<div class="sign clearfix">
+					<span class="focus_button"><a href="register.html" title="注册帐号">注册帐号</a></span>
+					<div class="bar bar2"></div>
+					<span class="focus_button"><a href="#" title="忘记密码？">忘记密码？</a></span>
+				</div>
+				<div id="other">
+					<img src="../img/da_img/login/其他方式登录左.png"/>
+					其他登录方式
+					<img src="../img/da_img/login/其他方式登录右.png"/>
+				</div>
+				<div id="other_way">
+					<a href="#" title="qq"><span id="qq"></span></a>
+					<a href="#" title="支付宝"><span id="pay"></span></a>
+					<a href="#" title="微信"><span id="wech"></span></a></div>					
+				</form>
+					<div class="code_area" hidden="hidden">
+						<div class="code_box">
+							<img id="code"  src="../img/da_img/login/二维码.png"/>
+							<img id="code_phone" src="../img/da_img/login/二维码1.png"/>
+						</div>
+
+				
+							<p class="tip">	
+								使用<span id="huaapp">华为移动服务APP</span>扫一扫<br />
+								若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。
+							</p>	
+					</div>	
+			</div>
+
+
+		</div>
+
+
+		<!--底部-->
+		<div class="footer">
+			<div class="footer_banner">
+				<div class="cookies">
+					<a href="#">华为帐号与云空间用户协议 </a>
+					<span>|</span>
+					<a href="#"> 关于华为帐号与云空间隐私的声明 </a>
+					<span>|</span>
+					<a href="#"> 常见问题 </a>
+					<span>|</span>
+					<a href="#"> Cookies</a>
+
+				</div>
+				<div class="copyright">
+					Copyright © 2011-2019  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
